@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request a Quote — MP Drafting</title>
+  <link rel="stylesheet" href="../css/wireframe.css">
+  <style>
+    .form-step { }
+    #form-step-2 { display: none; }
+  </style>
+</head>
+<body>
+
+<div id="nav"></div>
+
+<div class="breadcrumb-bar">
+  <div class="container">
+    <nav class="breadcrumb">
+      <a href="../">Home</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>Request a Quote</span>
+    </nav>
+  </div>
+</div>
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <div class="container">
+    <div class="label">Get Started</div>
+    <h1>Request a Quote</h1>
+    <p>Choose your level of detail, tell us about your project, and upload your drawings. We'll review and respond with a scope and estimate.</p>
+  </div>
+</div>
+
+<!-- FORM SECTION -->
+<section class="section">
+  <div class="container">
+    <div style="display: grid; grid-template-columns: 1fr 320px; gap: 64px; align-items: start;">
+
+      <!-- FORM -->
+      <div class="form-wrap">
+
+        <!-- Progress Indicator -->
+        <div class="form-progress">
+          <div class="form-step-ind active" id="step-ind-1">Step 1 of 2 — Project Details</div>
+          <div class="form-step-ind" id="step-ind-2">Step 2 of 2 — Your Information</div>
+        </div>
+
+        <!-- ── STEP 1 ── -->
+        <div id="form-step-1">
+
+          <h3 style="margin-bottom: 8px;">Which level of detail fits your project?</h3>
+          <p style="color: var(--gray-600); font-size: 0.9375rem; margin-bottom: 24px;">Not sure? Use the descriptions below. We'll also recommend a level after reviewing your drawings.</p>
+
+          <div class="level-cards">
+
+            <label class="level-card">
+              <input type="radio" name="level" value="quick-draw">
+              <div class="level-card-name">Quick Draw</div>
+              <div class="level-card-desc">Fast, streamlined detail for early-stage or budget-sensitive projects.</div>
+            </label>
+
+            <label class="level-card">
+              <input type="radio" name="level" value="typical-detail">
+              <div class="level-card-name">Typical Detail</div>
+              <div class="level-card-desc">More complete and coordinated for standard project submittals.</div>
+            </label>
+
+            <label class="level-card">
+              <input type="radio" name="level" value="design-build">
+              <div class="level-card-name">Design Build</div>
+              <div class="level-card-desc">Fully integrated support during early design development.</div>
+            </label>
+
+          </div>
+
+          <!-- What's included summary (static) -->
+          <div style="margin-bottom: 32px; padding: 16px 20px; background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: 6px; font-size: 0.875rem; color: var(--gray-600);">
+            Not sure which level? <a href="../shop-drawing-services/level-of-detail-options/" style="color: var(--gray-800); text-decoration: underline; text-underline-offset: 3px;">Compare all three levels →</a>
+          </div>
+
+          <!-- Design Build extra fields (shown only when Design Build selected) -->
+          <div id="design-build-fields">
+            <div style="padding: 20px; background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: 6px; margin-bottom: 28px;">
+              <p style="font-size: 0.875rem; color: var(--gray-600); margin-bottom: 0; max-width: none;">Design Build projects involve active design-phase collaboration. Please provide additional context below so we can scope this accurately.</p>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="project-name">Project Name</label>
+            <input type="text" id="project-name" name="project_name" class="form-input" placeholder="e.g. 400 Main Street — Office Tower">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="project-desc">Describe your project <span class="opt">(scope, system types, number of floors, any known constraints)</span></label>
+            <textarea id="project-desc" name="project_desc" class="form-textarea" placeholder="e.g. 8-story office building, curtain wall facade with aluminum storefront at ground level, all-glass entrance at main lobby..."></textarea>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group" style="margin-bottom: 0;">
+              <label class="form-label">Are you coordinating with an architect?</label>
+              <div class="radio-group" style="margin-top: 4px;">
+                <label class="radio-opt"><input type="radio" name="has_architect" value="yes"> Yes</label>
+                <label class="radio-opt"><input type="radio" name="has_architect" value="no"> No</label>
+              </div>
+            </div>
+            <div class="form-group" style="margin-bottom: 0;">
+              <label class="form-label">Do you need engineering support?</label>
+              <div class="radio-group" style="margin-top: 4px;">
+                <label class="radio-opt"><input type="radio" name="needs_engineering" value="yes"> Yes</label>
+                <label class="radio-opt"><input type="radio" name="needs_engineering" value="no"> No</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group mt-md">
+            <label class="form-label">Upload Your Architectural Drawings</label>
+            <div class="file-upload">
+              <div>Click to upload or drag files here</div>
+              <div class="file-upload-hint">PDF, DWG accepted · Max 64 MB per file</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="message">Additional notes <span class="opt">Optional</span></label>
+            <textarea id="message" name="message" class="form-textarea" style="min-height: 80px;" placeholder="Anything else we should know before scoping this job..."></textarea>
+          </div>
+
+          <div style="display: flex; justify-content: flex-end;">
+            <button id="form-next" class="btn btn--primary">Continue to Contact Info →</button>
+          </div>
+
+        </div>
+        <!-- END STEP 1 -->
+
+        <!-- ── STEP 2 ── -->
+        <div id="form-step-2">
+
+          <!-- Review Summary -->
+          <div class="review-box">
+            <h4>Project Summary — Review Before Submitting</h4>
+            <div class="review-row">
+              <span class="review-key">Level of Detail</span>
+              <span class="review-val" id="review-level">—</span>
+            </div>
+            <div class="review-row">
+              <span class="review-key">Project Name</span>
+              <span class="review-val" id="review-project">—</span>
+            </div>
+            <div class="review-row">
+              <span class="review-key">Drawings Uploaded</span>
+              <span class="review-val" id="review-files">—</span>
+            </div>
+            <button id="form-back" style="background:none;border:none;font-size:0.875rem;color:var(--gray-500);cursor:pointer;padding:0;margin-top:8px;">← Edit project details</button>
+          </div>
+
+          <h3 style="margin-bottom: 20px;">How do we contact you?</h3>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first_name" class="form-input" placeholder="First">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last_name" class="form-input" placeholder="Last">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="email">Email <span style="color:var(--gray-800);">*</span></label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="your@company.com" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="phone">Phone <span class="opt">Optional</span></label>
+            <input type="tel" id="phone" name="phone" class="form-input" placeholder="(___) ___-____">
+          </div>
+
+          <div style="padding: 16px 20px; background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: 6px; font-size: 0.875rem; color: var(--gray-600); margin-bottom: 28px;">
+            By submitting this form you agree to our <a href="../privacy-policy/" style="color: var(--gray-700); text-decoration: underline; text-underline-offset: 3px;">Privacy Policy</a>. We don't share your information. We'll use it to respond to your quote request and nothing else.
+          </div>
+
+          <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+            <button type="submit" class="btn btn--primary">Submit Quote Request</button>
+            <button id="form-back-2" onclick="document.getElementById('form-back').click()" style="background:none;border:none;font-size:0.875rem;color:var(--gray-500);cursor:pointer;">← Back</button>
+          </div>
+
+        </div>
+        <!-- END STEP 2 -->
+
+      </div>
+      <!-- END FORM -->
+
+      <!-- Sidebar -->
+      <div style="position: sticky; top: 88px; display: flex; flex-direction: column; gap: 16px;">
+
+        <div style="padding: 24px; border: 1px solid var(--gray-200); border-radius: 6px;">
+          <div class="label" style="margin-bottom: 12px;">What Happens Next</div>
+          <div style="display: flex; flex-direction: column; gap: 14px; margin-top: 4px;">
+            <div style="display: flex; gap: 12px; font-size: 0.875rem;">
+              <span style="font-weight: 700; color: var(--gray-900); flex-shrink: 0;">1.</span>
+              <span style="color: var(--gray-600);">We review your drawings and project description.</span>
+            </div>
+            <div style="display: flex; gap: 12px; font-size: 0.875rem;">
+              <span style="font-weight: 700; color: var(--gray-900); flex-shrink: 0;">2.</span>
+              <span style="color: var(--gray-600);">We return a scope confirmation with timeline and price.</span>
+            </div>
+            <div style="display: flex; gap: 12px; font-size: 0.875rem;">
+              <span style="font-weight: 700; color: var(--gray-900); flex-shrink: 0;">3.</span>
+              <span style="color: var(--gray-600);">You approve scope. Production begins.</span>
+            </div>
+            <div style="display: flex; gap: 12px; font-size: 0.875rem;">
+              <span style="font-weight: 700; color: var(--gray-900); flex-shrink: 0;">4.</span>
+              <span style="color: var(--gray-600);">Preview stage. Final delivery. Done.</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="padding: 24px; border: 1px solid var(--gray-200); border-radius: 6px;">
+          <div class="label" style="margin-bottom: 12px;">Level of Detail</div>
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            <div>
+              <div style="font-size: 0.875rem; font-weight: 700; color: var(--gray-800); margin-bottom: 4px;">Quick Draw</div>
+              <div style="font-size: 0.8125rem; color: var(--gray-500);">Early-stage or budget-sensitive projects.</div>
+            </div>
+            <div>
+              <div style="font-size: 0.875rem; font-weight: 700; color: var(--gray-800); margin-bottom: 4px;">Typical Detail</div>
+              <div style="font-size: 0.8125rem; color: var(--gray-500);">Standard submittals. The MP brand standard.</div>
+            </div>
+            <div>
+              <div style="font-size: 0.875rem; font-weight: 700; color: var(--gray-800); margin-bottom: 4px;">Design Build</div>
+              <div style="font-size: 0.8125rem; color: var(--gray-500);">Active design-phase integration and collaboration.</div>
+            </div>
+          </div>
+          <a href="../shop-drawing-services/level-of-detail-options/" style="font-size: 0.8125rem; color: var(--gray-600); text-decoration: underline; text-underline-offset: 3px; margin-top: 14px; display: inline-block;">Full comparison guide →</a>
+        </div>
+
+        <div style="padding: 24px; border: 1px solid var(--gray-200); border-radius: 6px;">
+          <div class="label" style="margin-bottom: 12px;">Not Ready to Submit?</div>
+          <p style="font-size: 0.875rem; color: var(--gray-600); margin-bottom: 14px; max-width: none;">Browse sample drawings first, or read about our process.</p>
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <a href="../sample-drawings/" style="font-size: 0.875rem; color: var(--gray-700); font-weight: 600;">View Sample Drawings →</a>
+            <a href="../our-process/" style="font-size: 0.875rem; color: var(--gray-700); font-weight: 600;">Learn Our Process →</a>
+            <a href="../contact/" style="font-size: 0.875rem; color: var(--gray-700); font-weight: 600;">Contact Us Directly →</a>
+          </div>
+        </div>
+
+      </div>
+      <!-- END SIDEBAR -->
+
+    </div>
+  </div>
+</section>
+
+<div id="footer"></div>
+
+<script>window.MP_BASE = '../';</script>
+<script src="../js/components.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
