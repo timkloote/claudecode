@@ -59,25 +59,28 @@
               <input type="radio" name="level" value="quick-draw">
               <div class="level-card-name">Quick Draw</div>
               <div class="level-card-desc">Fast, streamlined detail for early-stage or budget-sensitive projects.</div>
+              <button class="level-card-example" data-level="quick-draw">See example</button>
             </label>
 
             <label class="level-card">
               <input type="radio" name="level" value="typical-detail">
               <div class="level-card-name">Typical Detail</div>
               <div class="level-card-desc">More complete and coordinated for standard project submittals.</div>
+              <button class="level-card-example" data-level="typical-detail">See example</button>
             </label>
 
             <label class="level-card">
-              <input type="radio" name="level" value="design-build">
-              <div class="level-card-name">Design Build</div>
+              <input type="radio" name="level" value="design-assist">
+              <div class="level-card-name">Design Assist Detail</div>
               <div class="level-card-desc">Fully integrated support during early design development.</div>
+              <button class="level-card-example" data-level="design-assist">See example</button>
             </label>
 
           </div>
 
           <!-- What's included summary (static) -->
           <div style="margin-bottom: 32px; padding: 16px 20px; background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: 6px; font-size: 0.875rem; color: var(--gray-600);">
-            Not sure which level? <a href="../shop-drawing-services/level-of-detail-options/" style="color: var(--gray-800); text-decoration: underline; text-underline-offset: 3px;">Compare all three levels →</a>
+            Not sure which level? <a href="../#service-levels" style="color: var(--gray-800); text-decoration: underline; text-underline-offset: 3px;">Compare all three levels →</a>
           </div>
 
           <!-- Design Build extra fields (shown only when Design Build selected) -->
@@ -253,6 +256,21 @@
     </div>
   </div>
 </section>
+
+<!-- Level example modal -->
+<div class="level-example-modal" id="level-example-modal" role="dialog" aria-modal="true">
+  <div class="level-example-inner">
+    <button class="level-example-close" id="level-example-close" aria-label="Close">×</button>
+    <div class="level-example-img placeholder" id="level-example-img">[ Example drawing ]</div>
+    <div class="level-example-body">
+      <div class="label" id="level-example-tag"></div>
+      <h3 id="level-example-title"></h3>
+      <p class="level-example-tagline" id="level-example-tagline"></p>
+      <div id="level-example-content"></div>
+      <button class="btn btn--primary" id="level-example-select">Choose this level</button>
+    </div>
+  </div>
+</div>
 
 <div id="footer"></div>
 

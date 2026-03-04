@@ -3,295 +3,422 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MP Drafting — Precision Planning for Commercial Glazing Projects</title>
+  <title>MP Drafting — Precision Planning for Commercial Glazing Shop Drawings</title>
   <link rel="stylesheet" href="css/wireframe.css">
 </head>
 <body>
 
 <div id="nav"></div>
 
-<!-- ═══════════════════════════════════════════
-     HERO
-═══════════════════════════════════════════ -->
+<!-- Lightbox overlay (shared, lives outside sections) -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+  <div class="lightbox-inner">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close">×</button>
+    <div>[ Full-resolution shop drawing detail — dimensioning, fasteners, column lines ]</div>
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════
+     SECTION 1: HERO
+     Purpose: Signal precision immediately. Reduce schedule anxiety.
+═══════════════════════════════════════════════════ -->
 <section class="hero">
   <div class="container">
-    <div class="label">Commercial Glazing Shop Drawings</div>
-    <h1>Precision Planning for<br>Commercial Glazing Projects</h1>
-    <p class="hero-sub">Thorough drawings. Accurate fasteners. Architect-ready submittals. A structured process you don't have to babysit.</p>
-    <div class="btn-group">
-      <a href="request-quote/" class="btn btn--white">Send Us a Job</a>
-      <a href="sample-drawings/" class="btn btn--ghost">See Sample Drawings</a>
+    <div style="max-width: 720px;">
+      <div class="label">Commercial Glazing Shop Drawings</div>
+      <h1>Precision planning for commercial glazing shop drawings.</h1>
+      <p class="hero-sub">When deadlines are tight and the field needs clarity, we deliver coordinated, architect-ready shop drawings without the back-and-forth.</p>
+      <div class="btn-group">
+        <a href="request-quote/" class="btn btn--white">Get Started</a>
+        <a href="sample-drawings/" class="btn btn--ghost">View Sample Drawings</a>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════
-     TRUST STRIP
-═══════════════════════════════════════════ -->
-<div class="trust-strip">
-  <div class="container">
-    <div class="trust-items">
-      <div class="trust-item">
-        <span class="trust-item-value">[#]</span>
-        <span class="trust-item-label">Commercial Projects Completed</span>
-      </div>
-      <div class="trust-item">
-        <span class="trust-item-value">11</span>
-        <span class="trust-item-label">Glazing System Types</span>
-      </div>
-      <div class="trust-item">
-        <span class="trust-item-value">3</span>
-        <span class="trust-item-label">Levels of Detail Available</span>
-      </div>
-      <div class="trust-item">
-        <span class="trust-item-value">Arch-Ready</span>
-        <span class="trust-item-label">Submittal Standard</span>
-      </div>
-    </div>
-  </div>
-</div>
 
-<!-- ═══════════════════════════════════════════
-     PROBLEM / SOLUTION
-═══════════════════════════════════════════ -->
+<!-- ═══════════════════════════════════════════════════
+     SECTION 2: PROBLEM VALIDATION
+     Purpose: Validate common coordination failures.
+═══════════════════════════════════════════════════ -->
 <section class="section">
   <div class="container">
-    <div class="split">
-      <div>
-        <div class="label">Why Contractors Stay</div>
-        <h2 style="margin-top:12px;">You Need This Done Right. You Don't Have Time to Manage It.</h2>
-        <p class="mt-sm">The contractors who come back to MP aren't chasing the lowest price. They're protecting their reputation on the job. Architects notice when submittals are incomplete. Field crews notice when dimensions don't add up.</p>
-        <p class="mt-sm">Our repeat customers stay because they don't have to babysit the process. Drawings are thorough. Fasteners are accurate. Column lines are clear. Communication is there when you need it.</p>
-        <a href="our-process/" class="btn btn--secondary mt-md">See Our Process →</a>
+
+    <div style="max-width:680px;">
+      <h2>Precision on paper prevents pain in the field.</h2>
+      <p class="mt-sm">When elevations are wrong or missing, or details do not match, it creates review churn, field confusion, and schedule risk. MP Drafting exists to coordinate reality before it becomes a jobsite problem.</p>
+    </div>
+
+    <div class="problem-points mt-lg">
+      <div class="problem-point">
+        <p>Complete dimensioning for field layout and coordination</p>
       </div>
-      <div>
-        <div class="feature-list">
-          <div class="feature-item">
-            <div class="feature-icon">✓</div>
-            <div class="feature-text">
-              <h4>Thorough, Coordinated Drawings</h4>
-              <p>Every detail reflects actual field conditions, not just manufacturer templates.</p>
-            </div>
-          </div>
-          <div class="feature-item">
-            <div class="feature-icon">✓</div>
-            <div class="feature-text">
-              <h4>Accurate Fastener Specification</h4>
-              <p>Fasteners matched to condition — not listed as placeholders.</p>
-            </div>
-          </div>
-          <div class="feature-item">
-            <div class="feature-icon">✓</div>
-            <div class="feature-text">
-              <h4>Column Lines &amp; Layout Clarity</h4>
-              <p>Field crews have what they need to execute without guessing.</p>
-            </div>
-          </div>
-          <div class="feature-item">
-            <div class="feature-icon">✓</div>
-            <div class="feature-text">
-              <h4>Responsive Communication</h4>
-              <p>One contact. No chasing. Updates when you need them.</p>
-            </div>
-          </div>
-          <div class="feature-item">
-            <div class="feature-icon">✓</div>
-            <div class="feature-text">
-              <h4>Structured Process</h4>
-              <p>KO form. Preview stage. Final delivery. No surprises.</p>
-            </div>
-          </div>
-        </div>
+      <div class="problem-point">
+        <p>Fasteners matched to conditions, not guessed placeholders</p>
+      </div>
+      <div class="problem-point">
+        <p>Clean, architect-ready sets that reduce follow-up questions</p>
       </div>
     </div>
+
   </div>
 </section>
 
 <div class="divider"></div>
 
-<!-- ═══════════════════════════════════════════
-     THREE LEVELS OF DETAIL
-═══════════════════════════════════════════ -->
+
+<!-- ═══════════════════════════════════════════════════
+     SECTION 3: SAMPLE DRAWINGS PROOF
+     Purpose: Visual credibility. Conversion-critical.
+═══════════════════════════════════════════════════ -->
 <section class="section section--gray">
   <div class="container">
+
     <div class="section-header">
-      <div class="label">Levels of Detail</div>
-      <h2>Flexible Support for Every Project Phase</h2>
-      <p>Not every project needs the same level of detail. We quote whatever level fits your situation — from quick approval sets to full design-phase integration.</p>
+      <h2>See what coordinated looks like.</h2>
+      <p>Sample sheets showing the details contractors and architects actually look for: dimensioning clarity, fastener specificity, column line references, and a clean annotation hierarchy.</p>
     </div>
+
+    <div class="proof-grid">
+      <div class="proof-thumb" data-lightbox data-caption="Curtain Wall — Head Condition">[ CW Head ]</div>
+      <div class="proof-thumb" data-lightbox data-caption="Storefront — Sill with Threshold">[ SF Sill ]</div>
+      <div class="proof-thumb" data-lightbox data-caption="All-Glass — Patch Fitting Detail">[ AG Patch ]</div>
+      <div class="proof-thumb" data-lightbox data-caption="Curtain Wall — Anchor Clip">[ CW Anchor ]</div>
+      <div class="proof-thumb" data-lightbox data-caption="Handrail — Base Plate Detail">[ Rail Base ]</div>
+    </div>
+
+    <a href="sample-drawings/" class="btn btn--primary">Open Sample Drawings</a>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     SECTION 4: SERVICE LEVELS
+     Purpose: Reduce entry friction while preserving authority.
+═══════════════════════════════════════════════════ -->
+<section class="section" id="service-levels">
+  <div class="container">
+
+    <div class="section-header">
+      <h2>Choose the level of detail that fits your project phase.</h2>
+      <p>Not every project needs the same depth on day one. We offer three levels so you can get the right output without price shock, then scale up when the job demands it.</p>
+    </div>
+
     <div class="grid grid--3">
 
       <div class="card">
         <div class="card-badge card-badge--l1">Level 1</div>
         <h3>Quick Draw</h3>
-        <p>Fast, streamlined detail for early-stage or budget-sensitive projects.</p>
+        <p>Fast, streamlined drawings for early-stage or budget-sensitive work.</p>
         <ul>
-          <li>Basic system details based on customer input</li>
-          <li>Generic surrounding condition representation</li>
-          <li>Fasteners shown as placeholders</li>
-          <li>Ideal for approval-stage submittals</li>
+          <li>Basic system details</li>
+          <li>Generic conditions</li>
+          <li>Placeholder fasteners when appropriate</li>
         </ul>
         <div class="card-footer">
-          <a href="request-quote/" class="btn btn--secondary btn--sm">Request a Quote</a>
+          <a href="request-quote/" class="btn btn--secondary btn--sm">Send Us a Job</a>
         </div>
       </div>
 
-      <div class="card">
+      <div class="card card--featured" style="position:relative;">
+        <div class="card-most-common">Brand Standard</div>
         <div class="card-badge card-badge--l2">Level 2</div>
         <h3>Typical Detail</h3>
-        <p>More complete and coordinated for standard project submittals.</p>
+        <p>Our standard for most commercial submittals.</p>
         <ul>
-          <li>Accurate surrounding conditions from architectural drawings</li>
-          <li>Correct fasteners matched to condition</li>
-          <li>IN/OUT dimensions and column lines shown</li>
-          <li>Notes to clarify missing or estimated information</li>
-          <li>Ready for architectural review and approval</li>
+          <li>Accurate surrounding conditions</li>
+          <li>Correct fasteners matched to the condition</li>
+          <li>IN/OUT dimensions and column lines</li>
+          <li>Clear notes</li>
         </ul>
         <div class="card-footer">
-          <a href="request-quote/" class="btn btn--secondary btn--sm">Request a Quote</a>
+          <a href="request-quote/" class="btn btn--primary btn--sm">Send Us a Job</a>
         </div>
       </div>
 
       <div class="card">
         <div class="card-badge card-badge--l3">Level 3</div>
         <h3>Design Build Detail</h3>
-        <p>Fully integrated support during early design development.</p>
+        <p>Integrated drafting support during active design development.</p>
         <ul>
-          <li>Collaborative input during active design-phase changes</li>
-          <li>Early coordination with customer, architect, and engineer</li>
-          <li>Drawings updated live as design evolves</li>
-          <li>Engineering available post-approval if required</li>
+          <li>Live collaboration during design changes</li>
+          <li>Coordination with architect and engineer</li>
+          <li>Built for higher complexity jobs</li>
         </ul>
         <div class="card-footer">
-          <a href="request-quote/" class="btn btn--primary btn--sm">Request a Quote</a>
+          <a href="request-quote/" class="btn btn--secondary btn--sm">Send Us a Job</a>
         </div>
       </div>
 
     </div>
-    <div class="text-center mt-lg">
-      <a href="shop-drawing-services/level-of-detail-options/" class="btn btn--secondary">Compare All Three Levels →</a>
-    </div>
-  </div>
-</section>
 
-<!-- ═══════════════════════════════════════════
-     SAMPLE DRAWINGS TEASER
-═══════════════════════════════════════════ -->
-<section class="section">
-  <div class="container">
-    <div class="section-header">
-      <div class="label">Proof of Quality</div>
-      <h2>See What Precision Looks Like</h2>
-      <p>Before you commit, see the work. Sample drawings from curtain wall, storefront, all-glass entrances, and more.</p>
-    </div>
-    <div class="grid grid--3">
-      <div class="placeholder placeholder--md">[ Curtain Wall System Detail — Sample Drawing ]</div>
-      <div class="placeholder placeholder--md">[ Storefront Head / Sill Detail — Sample Drawing ]</div>
-      <div class="placeholder placeholder--md">[ All-Glass Entrance Detail — Sample Drawing ]</div>
-    </div>
-    <div class="text-center mt-lg">
-      <a href="sample-drawings/" class="btn btn--primary">View All Sample Drawings</a>
-    </div>
   </div>
 </section>
 
 <div class="divider"></div>
 
-<!-- ═══════════════════════════════════════════
-     OUR PROCESS TEASER
-═══════════════════════════════════════════ -->
+
+<!-- ═══════════════════════════════════════════════════
+     SECTION 5: PROCESS
+     Purpose: Show structure. Reduce fear of babysitting.
+═══════════════════════════════════════════════════ -->
 <section class="section section--gray">
   <div class="container">
+
     <div class="section-header">
-      <div class="label">How It Works</div>
-      <h2>A Structured Process. From First Job to Final Approval.</h2>
-      <p>A clear intake. A preview before you commit. A delivery that doesn't need follow-up.</p>
+      <h2>A structured process that keeps the job moving.</h2>
+      <p>We start with a clear kickoff, run a preview to catch missing information early, then deliver a review-ready set with a straightforward revision path to submittal.</p>
     </div>
+
     <div class="process-steps">
       <div class="process-step">
         <div class="step-number">01</div>
-        <div class="step-title">Submit Your Project</div>
-        <div class="step-desc">Fill out the quote form with project details and drawings.</div>
+        <div class="step-title">Kickoff</div>
+        <div class="step-desc">You send files and scope. We confirm what we need.</div>
       </div>
       <div class="process-step">
         <div class="step-number">02</div>
-        <div class="step-title">Kickoff &amp; Scope</div>
-        <div class="step-desc">We confirm scope, level of detail, and timeline.</div>
+        <div class="step-title">Preview</div>
+        <div class="step-desc">We confirm what is missing before drafting begins.</div>
       </div>
       <div class="process-step">
         <div class="step-number">03</div>
-        <div class="step-title">Preview Stage</div>
-        <div class="step-desc">Review a preview set before we finalize. No surprises.</div>
+        <div class="step-title">Draft</div>
+        <div class="step-desc">Coordinated set produced for your review.</div>
       </div>
       <div class="process-step">
         <div class="step-number">04</div>
-        <div class="step-title">Final Delivery</div>
-        <div class="step-desc">Architect-ready submittals delivered in your required format.</div>
+        <div class="step-title">Revisions</div>
+        <div class="step-desc">Updates tracked and turned for submittal.</div>
       </div>
     </div>
+
     <div class="mt-lg">
-      <a href="our-process/" class="btn btn--secondary">Learn Our Full Process →</a>
+      <a href="our-process/" class="btn btn--secondary">See Our Process</a>
     </div>
+
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════
-     ENGINEERING POSITIONING
-═══════════════════════════════════════════ -->
+
+<!-- ═══════════════════════════════════════════════════
+     SECTION 6: ENGINEERING CLARIFICATION
+     Purpose: Clarify roles. No competitive framing.
+═══════════════════════════════════════════════════ -->
 <section class="section">
   <div class="container">
-    <div class="split split--60">
+    <div class="split">
+
       <div>
-        <div class="label">Engineering &amp; Drafting</div>
-        <h2 style="margin-top:12px;">Shop Drawings Are Not Secondary to Engineering</h2>
-        <p class="mt-sm">Some contractors assume they should go to the engineer first so they can "knock out the shops." That misperception devalues what drafting actually does — and can create more work downstream.</p>
-        <div class="highlight-box mt-md">
-          <p><strong>Engineers validate structural performance.</strong> MP coordinates reality. We integrate architectural inconsistencies, resolve fabrication-level detail, clarify fastener selection, and give installers layout clarity. When aligned, both roles are more powerful together.</p>
-        </div>
-        <a href="shop-drawing-services/engineering-technical-support/" class="btn btn--secondary mt-md">Engineering &amp; Technical Support →</a>
+        <h2>Engineering validates. Shop drawings coordinate.</h2>
+        <p class="mt-sm">Some projects require engineering. Many require coordination first. We keep the roles clear and aligned so you do not lose time managing multiple channels.</p>
+        <ul class="mt-md" style="display:flex;flex-direction:column;gap:16px;padding:0;">
+          <li style="display:flex;gap:14px;align-items:flex-start;font-size:0.9375rem;color:var(--gray-600);">
+            <span style="width:6px;height:6px;background:var(--gray-400);border-radius:50%;flex-shrink:0;margin-top:8px;"></span>
+            Engineering validates structural performance when required
+          </li>
+          <li style="display:flex;gap:14px;align-items:flex-start;font-size:0.9375rem;color:var(--gray-600);">
+            <span style="width:6px;height:6px;background:var(--gray-400);border-radius:50%;flex-shrink:0;margin-top:8px;"></span>
+            MP Drafting integrates architectural conditions, fabrication detail, and installer layout clarity
+          </li>
+          <li style="display:flex;gap:14px;align-items:flex-start;font-size:0.9375rem;color:var(--gray-600);">
+            <span style="width:6px;height:6px;background:var(--gray-400);border-radius:50%;flex-shrink:0;margin-top:8px;"></span>
+            When bundled, we coordinate the workflow so you have one organized path
+          </li>
+        </ul>
+        <a href="shop-drawing-services/engineering-technical-support/" class="btn btn--secondary mt-md">Engineering Coordination</a>
       </div>
+
       <div>
-        <div class="placeholder placeholder--lg">[ Diagram: Engineering validates / MP coordinates — visual distinction ]</div>
+        <div class="placeholder placeholder--lg">[ Diagram: Engineering validates structural performance / MP Drafting coordinates field reality ]</div>
       </div>
+
     </div>
   </div>
 </section>
 
 <div class="divider"></div>
 
-<!-- ═══════════════════════════════════════════
-     GLAZIERIQ MENTION
-═══════════════════════════════════════════ -->
+
+<!-- ═══════════════════════════════════════════════════
+     SECTION 7: PROJECT TYPES
+     Purpose: Help contractors quickly self-qualify.
+═══════════════════════════════════════════════════ -->
 <section class="section section--gray">
   <div class="container">
-    <div class="glazieriq-block">
+
+    <div class="section-header">
+      <h2>Drafting support for commercial storefront and curtain wall projects.</h2>
+      <p>We support storefront, curtain wall, and specialty glazing projects that require coordinated shop drawings, architect review, and structured revision cycles.</p>
+    </div>
+
+    <div class="project-type-grid">
+      <a href="industries/office-buildings/" class="project-type-item">
+        <div class="project-type-img">[ Office Building ]</div>
+        <div class="project-type-name">Office Buildings</div>
+      </a>
+      <a href="industries/healthcare/" class="project-type-item">
+        <div class="project-type-img">[ Healthcare ]</div>
+        <div class="project-type-name">Healthcare</div>
+      </a>
+      <a href="industries/education/" class="project-type-item">
+        <div class="project-type-img">[ Education ]</div>
+        <div class="project-type-name">Education</div>
+      </a>
+      <a href="industries/retail-mixed-use/" class="project-type-item">
+        <div class="project-type-img">[ Retail / Mixed-Use ]</div>
+        <div class="project-type-name">Retail &amp; Mixed-Use</div>
+      </a>
+      <a href="industries/hospitality/" class="project-type-item">
+        <div class="project-type-img">[ Hospitality ]</div>
+        <div class="project-type-name">Hospitality</div>
+      </a>
+      <a href="industries/municipal/" class="project-type-item">
+        <div class="project-type-img">[ Municipal ]</div>
+        <div class="project-type-name">Municipal</div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     SECTION 8: INTEGRATED TEAM
+     Purpose: Reinforce accountability and operational control.
+═══════════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="split">
+
       <div>
-        <div class="label" style="color:var(--gray-500);">Extended Coordination</div>
-        <h3 style="margin-top:10px;">When Your Project Needs More Than Drafting</h3>
-        <p class="mt-sm">MP clients can access engineering coordination and procurement alignment through our extended network. When your project requires seamless alignment across disciplines — we help connect the pieces.</p>
-        <a href="#" class="glazieriq-link">Learn about GlazierIQ ↗</a>
+        <div class="placeholder placeholder--lg">[ Studio workspace — coordinated drafting environment ]</div>
       </div>
-      <div class="glazieriq-label">
-        <div class="giq-name">GlazierIQ</div>
-        <div class="giq-sub">Operational Alignment Network</div>
+
+      <div>
+        <h2>An integrated drafting team.</h2>
+        <p class="mt-sm">Our drafting team works together in one coordinated environment. Communication is direct. Revisions are aligned. Questions are resolved without handoffs across time zones.</p>
+        <p class="mt-sm">Every project benefits from shared oversight, structured review, and internal collaboration.</p>
+        <a href="about/" class="btn btn--secondary mt-md">Meet the Team</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+
+<!-- ═══════════════════════════════════════════════════
+     SECTION 9: FAQ PREVIEW
+     Purpose: Remove hesitation before first job submission.
+═══════════════════════════════════════════════════ -->
+<section class="section section--gray">
+  <div class="container">
+    <div class="faq-preview-layout">
+
+      <div>
+        <h2>Common first-job questions.</h2>
+
+        <div class="faq-list mt-md">
+
+          <div class="faq-item">
+            <button class="faq-question">
+              What do you need from us to quote and start?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Architectural drawings (PDF or DWG), a brief project description, the system type, and your preferred level of detail. Upload everything through the quote form and we take it from there.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              How do revisions work?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Revisions are tracked and returned on a structured cycle. The preview stage catches most issues early. Once in final production, changes are documented, addressed, and turned for submittal without starting over.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              What is a typical turnaround for updates?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Turnaround for revision updates depends on scope. We confirm timeline at the beginning of each revision cycle so there are no guesses.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              When do we need engineering?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Engineering is required when structural validation is needed — wind loads, anchor calculations, or stamped documents for permit or submittal. Many projects require coordinated shop drawings first. We help identify when engineering is needed and can bundle coordination when it is.
+            </div>
+          </div>
+
+        </div>
+
+        <a href="faq/" class="btn btn--secondary mt-md">Read FAQs</a>
+      </div>
+
+      <div style="padding-top:56px;">
+        <div style="padding:28px;border:1px solid var(--gray-200);border-radius:6px;background:white;">
+          <div class="label" style="margin-bottom:12px;">Ready to move forward?</div>
+          <p style="font-size:0.9375rem;color:var(--gray-600);margin-bottom:20px;max-width:none;">Upload your drawings and tell us the scope. We will confirm what we need and move it forward.</p>
+          <a href="request-quote/" class="btn btn--primary" style="display:block;text-align:center;">Get Started</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     SECTION 10: GLAZIERIQ REFERENCE
+     Purpose: Subtle ecosystem credibility. Restrained.
+═══════════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div style="border:1px solid var(--gray-200);border-radius:8px;padding:40px;display:flex;justify-content:space-between;align-items:center;gap:40px;flex-wrap:wrap;">
+      <div style="max-width:580px;">
+        <div class="label" style="margin-bottom:12px;">Extended Coordination</div>
+        <h2 style="font-size:clamp(1.25rem,2.5vw,1.75rem);margin-bottom:14px;">Backed by deeper operational coordination.</h2>
+        <p style="color:var(--gray-600);">When needed, MP clients can streamline engineering coordination through our extended network and align drafting with the rest of the project workflow.</p>
+      </div>
+      <div style="text-align:right;flex-shrink:0;">
+        <div style="font-size:1.25rem;font-weight:700;color:var(--gray-400);letter-spacing:-0.02em;">GlazierIQ</div>
+        <div style="font-size:0.75rem;color:var(--gray-500);margin-top:4px;">Operational Alignment Network</div>
+        <a href="#" style="font-size:0.8125rem;color:var(--gray-500);text-decoration:underline;text-underline-offset:3px;margin-top:12px;display:inline-block;">Learn more ↗</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════
-     FINAL CTA
-═══════════════════════════════════════════ -->
+
+<!-- ═══════════════════════════════════════════════════
+     SECTION 11: FINAL CTA BAND
+     Purpose: Close with clarity and simplicity.
+═══════════════════════════════════════════════════ -->
 <section class="cta-banner">
   <div class="container">
-    <h2>Ready to Send a Job?</h2>
-    <p>Choose your level of detail and get a quote in minutes. Quick Draw to Design Build — we quote it all.</p>
+    <h2>Send us a job. We will tell you the next step.</h2>
+    <p>Upload drawings, pick the level of detail, and add a short scope description. We will confirm what we need and move it forward.</p>
     <div class="btn-group">
-      <a href="request-quote/" class="btn btn--white">Request a Quote</a>
-      <a href="sample-drawings/" class="btn btn--ghost">View Sample Drawings</a>
+      <a href="request-quote/" class="btn btn--white">Get Started</a>
     </div>
   </div>
 </section>
+
 
 <div id="footer"></div>
 
