@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var levelModalSelect = document.getElementById('level-example-select');
   var currentExampleLevel = null;
 
-  document.querySelectorAll('.level-card-example').forEach(function (btn) {
+  document.querySelectorAll('[data-level]').forEach(function (btn) {
     btn.addEventListener('click', function (e) {
       e.preventDefault();
       e.stopPropagation();

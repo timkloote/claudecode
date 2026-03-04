@@ -382,6 +382,10 @@ p  { max-width: 68ch; }
   text-align: center;
   transition: background 0.15s, color 0.15s, border-color 0.15s;
   line-height: 1.2;
+  box-sizing: border-box;
+  font-family: inherit;
+  vertical-align: middle;
+  text-decoration: none;
 }
 .btn--primary   { background: var(--gray-900); color: var(--white); border-color: var(--gray-900); }
 .btn--primary:hover { background: var(--gray-700); border-color: var(--gray-700); }
@@ -454,7 +458,7 @@ p  { max-width: 68ch; }
 .card > p     { color: var(--gray-600); font-size: 0.9375rem; margin-bottom: 16px; flex: 1; max-width: none; }
 .card ul      { color: var(--gray-600); font-size: 0.875rem; padding-left: 16px; list-style: disc; }
 .card ul li   { margin-bottom: 6px; }
-.card-footer  { margin-top: auto; padding-top: 20px; border-top: 1px solid var(--gray-100); }
+.card-footer  { margin-top: auto; padding-top: 20px; border-top: 1px solid var(--gray-100); display: flex; gap: 8px; flex-wrap: wrap; }
 
 /* Service card */
 .service-card {

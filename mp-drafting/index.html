@@ -119,7 +119,8 @@
           <li>Placeholder fasteners when appropriate</li>
         </ul>
         <div class="card-footer">
-          <a href="request-quote/" class="btn btn--secondary btn--sm">Send Us a Job</a>
+          <button class="btn btn--secondary btn--sm" data-level="quick-draw">See Example</button>
+          <a href="request-quote/" class="btn btn--primary btn--sm">Send Us a Job</a>
         </div>
       </div>
 
@@ -135,6 +136,7 @@
           <li>Clear notes</li>
         </ul>
         <div class="card-footer">
+          <button class="btn btn--secondary btn--sm" data-level="typical-detail">See Example</button>
           <a href="request-quote/" class="btn btn--primary btn--sm">Send Us a Job</a>
         </div>
       </div>
@@ -149,7 +151,8 @@
           <li>Built for higher complexity jobs</li>
         </ul>
         <div class="card-footer">
-          <a href="request-quote/" class="btn btn--secondary btn--sm">Send Us a Job</a>
+          <button class="btn btn--secondary btn--sm" data-level="design-assist">See Example</button>
+          <a href="request-quote/" class="btn btn--primary btn--sm">Send Us a Job</a>
         </div>
       </div>
 
@@ -419,6 +422,21 @@
   </div>
 </section>
 
+
+<!-- Level example modal -->
+<div class="level-example-modal" id="level-example-modal" role="dialog" aria-modal="true">
+  <div class="level-example-inner">
+    <button class="level-example-close" id="level-example-close" aria-label="Close">×</button>
+    <div class="level-example-img placeholder" id="level-example-img">[ Example drawing ]</div>
+    <div class="level-example-body">
+      <div class="label" id="level-example-tag"></div>
+      <h3 id="level-example-title"></h3>
+      <p class="level-example-tagline" id="level-example-tagline"></p>
+      <div id="level-example-content"></div>
+      <a href="request-quote/" class="btn btn--primary" id="level-example-select">Send Us a Job</a>
+    </div>
+  </div>
+</div>
 
 <div id="footer"></div>
 
