@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
       bullets: [
         'Basic system details based on customer input',
         'Generic surrounding condition representation',
-        'Fasteners shown as placeholders (installer determines actual type)'
+        'Faster Lead Times'
       ]
     },
     'typical-detail': {
@@ -93,22 +93,20 @@ document.addEventListener('DOMContentLoaded', function () {
         'Includes everything in a Quick Draw',
         'Accurate surrounding conditions based on architectural drawings',
         'Correct fasteners shown and matched to condition',
-        'IN/OUT dimensions and column lines shown',
+        'Coordination dimensions and column line references',
         'Notes to clarify missing or estimated information',
         'Ready for architectural review and approval'
       ]
     },
     'design-assist': {
       tag:     'Level 3',
-      title:   'Design Assist Detail',
-      tagline: 'Fully integrated support during early design development.',
+      title:   'Advanced Detailing',
+      tagline: 'Expanded drafting support for projects requiring more.',
       bullets: [
-        'Includes everything in a Typical Detail',
-        'Collaborative input during active design-phase changes',
-        'Early coordination with customer, architect, and engineer',
-        'Drawings updated live as design evolves',
-        'Ideal for design/assist, negotiated, or complex projects',
-        'Engineering available post-approval if required'
+        'Design Assist services',
+        '3D Isometrics or option detailing',
+        'Studies for complex conditions',
+        'Drawings using client standards or templates'
       ]
     }
   };
