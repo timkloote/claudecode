@@ -88,14 +88,12 @@ document.addEventListener('DOMContentLoaded', function () {
     'typical-detail': {
       tag:     'Level 2 — MP Standard',
       title:   'Typical Detail',
-      tagline: 'More complete and coordinated for standard project submittals.',
+      tagline: 'Our standard for most commercial submittals.',
       bullets: [
-        'Includes everything in a Quick Draw',
-        'Accurate surrounding conditions based on architectural drawings',
-        'Correct fasteners shown and matched to condition',
+        'Accurate surrounding conditions',
+        'Correct fasteners matched to the condition',
         'Coordination dimensions and column line references',
-        'Notes to clarify missing or estimated information',
-        'Ready for architectural review and approval'
+        'Clear notes'
       ]
     },
     'design-assist': {

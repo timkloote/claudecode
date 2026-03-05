@@ -455,7 +455,7 @@ p  { max-width: 68ch; }
 .card-badge--l3 { background: var(--gray-900); color: var(--white); }
 
 .card h3      { font-size: 1.125rem; margin-bottom: 10px; }
-.card > p     { color: var(--gray-600); font-size: 0.9375rem; margin-bottom: 16px; flex: 1; max-width: none; }
+.card > p     { color: var(--gray-600); font-size: 0.9375rem; margin-bottom: 16px; max-width: none; }
 .card ul      { color: var(--gray-600); font-size: 0.875rem; padding-left: 16px; list-style: disc; }
 .card ul li   { margin-bottom: 6px; }
 .card-footer  { margin-top: auto; padding-top: 20px; border-top: 1px solid var(--gray-100); display: flex; gap: 8px; flex-wrap: wrap; }
