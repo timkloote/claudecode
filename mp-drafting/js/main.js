@@ -274,4 +274,91 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+  /* ── Our Process: anchor nav active state + process progress bar ── */
+  (function () {
+    var anchorLinks = document.querySelectorAll('.anchor-nav a[href^="#"]');
+    var processBlocks = document.querySelectorAll('.process-block');
+    if (!anchorLinks.length || !processBlocks.length) return;
+
+    // Build ordered list of { id, section el, nav link, process block }
+    var steps = [];
+    anchorLinks.forEach(function (link, i) {
+      var id = link.getAttribute('href').slice(1);
+      var el = document.getElementById(id);
+      if (el) steps.push({ id: id, el: el, link: link, block: processBlocks[i] || null });
+    });
+
+    var sidebarDots = document.querySelectorAll('.process-sidebar-dot');
+    var sidebarFill = document.getElementById('process-sidebar-fill');
+
+    function applyActive(activeId) {
+      var activeIndex = -1;
+      steps.forEach(function (s, i) { if (s.id === activeId) activeIndex = i; });
+
+      steps.forEach(function (s, i) {
+        // Anchor nav
+        s.link.classList.toggle('active', s.id === activeId);
+        // Process block
+        if (s.block) {
+          if (i < activeIndex) {
+            s.block.classList.add('is-done');
+            s.block.classList.remove('is-active');
+          } else if (i === activeIndex) {
+            s.block.classList.add('is-active');
+            s.block.classList.remove('is-done');
+          } else {
+            s.block.classList.remove('is-done', 'is-active');
+          }
+        }
+        // Sidebar dots
+        var dot = sidebarDots[i];
+        if (dot) {
+          dot.classList.toggle('is-active', i === activeIndex);
+          dot.classList.toggle('is-done', i < activeIndex);
+        }
+      });
+
+      // Sidebar fill — progress from first to last dot
+      if (sidebarFill && steps.length > 1) {
+        var pct = activeIndex / (steps.length - 1) * 100;
+        sidebarFill.style.height = pct + '%';
+      }
+    }
+
+    // IntersectionObserver: fire when a section crosses into the upper portion of the viewport
+    var visible = {};
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        visible[entry.target.id] = entry.isIntersecting;
+      });
+      // First visible section in DOM order wins
+      for (var i = 0; i < steps.length; i++) {
+        if (visible[steps[i].id]) { applyActive(steps[i].id); return; }
+      }
+    }, { rootMargin: '-10% 0px -65% 0px', threshold: 0 });
+
+    steps.forEach(function (s) { io.observe(s.el); });
+
+    // Click: smooth-scroll with offset for sticky nav + anchor bar (~120px)
+    function smoothScrollToId(id, e) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      if (e) e.preventDefault();
+      var top = target.getBoundingClientRect().top + window.scrollY - 120;
+      window.scrollTo({ top: top, behavior: 'smooth' });
+    }
+
+    anchorLinks.forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        smoothScrollToId(this.getAttribute('href').slice(1), e);
+      });
+    });
+
+    sidebarDots.forEach(function (dot) {
+      dot.addEventListener('click', function (e) {
+        smoothScrollToId(this.getAttribute('href').slice(1), e);
+      });
+    });
+  }());
+
 });
