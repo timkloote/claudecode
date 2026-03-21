@@ -5,10 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Request a Quote — MP Drafting</title>
   <link rel="stylesheet" href="../css/wireframe.css">
-  <style>
-    .form-step { }
-    #form-step-2 { display: none; }
-  </style>
+  <link rel="stylesheet" href="../css/global.css">
 </head>
 <body>
 
@@ -25,18 +22,18 @@
 </div>
 
 <!-- PAGE HEADER -->
-<div class="page-header">
+<header class="page-header">
   <div class="container">
     <div class="label">Get Started</div>
     <h1>Request a Quote</h1>
     <p>Choose your level of detail, tell us about your project, and upload your drawings. We'll review and respond with a scope and estimate.</p>
   </div>
-</div>
+</header>
 
 <!-- FORM SECTION -->
 <section class="section">
   <div class="container">
-    <div style="display: grid; grid-template-columns: 1fr 320px; gap: 64px; align-items: start;">
+    <div class="content-with-sidebar">
 
       <!-- FORM -->
       <div class="form-wrap">
@@ -50,8 +47,8 @@
         <!-- ── STEP 1 ── -->
         <div id="form-step-1">
 
-          <h3 style="margin-bottom: 8px;">Which level of detail fits your project?</h3>
-          <p style="color: var(--gray-600); font-size: 0.9375rem; margin-bottom: 24px;">Not sure? Use the descriptions below. We'll also recommend a level after reviewing your drawings.</p>
+          <h3 class="mb-8">Which level of detail fits your project?</h3>
+          <p class="text-body-sm mb-24">Not sure? Use the descriptions below. We'll also recommend a level after reviewing your drawings.</p>
 
           <div class="level-cards">
 
@@ -79,14 +76,14 @@
           </div>
 
           <!-- What's included summary (static) -->
-          <div style="margin-bottom: 32px; padding: 16px 20px; background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: 6px; font-size: 0.875rem; color: var(--gray-600);">
-            Not sure which level? <a href="../#service-levels" style="color: var(--gray-800); text-decoration: underline; text-underline-offset: 3px;">Compare all three levels →</a>
+          <div class="infobox mb-32">
+            Not sure which level? <a href="../#service-levels" class="link link--darker">Compare all three levels →</a>
           </div>
 
           <!-- Design Build extra fields (shown only when Design Build selected) -->
           <div id="design-build-fields">
-            <div style="padding: 20px; background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: 6px; margin-bottom: 28px;">
-              <p style="font-size: 0.875rem; color: var(--gray-600); margin-bottom: 0; max-width: none;">Advanced Detailing projects involve active design-phase collaboration. Please provide additional context below so we can scope this accurately.</p>
+            <div class="infobox mb-md">
+              <p class="mb-0 mw-none">Advanced Detailing projects involve active design-phase collaboration. Please provide additional context below so we can scope this accurately.</p>
             </div>
           </div>
 
@@ -101,16 +98,16 @@
           </div>
 
           <div class="form-row">
-            <div class="form-group" style="margin-bottom: 0;">
+            <div class="form-group mb-0">
               <label class="form-label">Are you coordinating with an architect?</label>
-              <div class="radio-group" style="margin-top: 4px;">
+              <div class="radio-group mt-4">
                 <label class="radio-opt"><input type="radio" name="has_architect" value="yes"> Yes</label>
                 <label class="radio-opt"><input type="radio" name="has_architect" value="no"> No</label>
               </div>
             </div>
-            <div class="form-group" style="margin-bottom: 0;">
+            <div class="form-group mb-0">
               <label class="form-label">Do you need engineering support?</label>
-              <div class="radio-group" style="margin-top: 4px;">
+              <div class="radio-group mt-4">
                 <label class="radio-opt"><input type="radio" name="needs_engineering" value="yes"> Yes</label>
                 <label class="radio-opt"><input type="radio" name="needs_engineering" value="no"> No</label>
               </div>
@@ -127,10 +124,10 @@
 
           <div class="form-group">
             <label class="form-label" for="message">Additional notes <span class="opt">Optional</span></label>
-            <textarea id="message" name="message" class="form-textarea" style="min-height: 80px;" placeholder="Anything else we should know before scoping this job..."></textarea>
+            <textarea id="message" name="message" class="form-textarea form-textarea--short" placeholder="Anything else we should know before scoping this job..."></textarea>
           </div>
 
-          <div style="display: flex; justify-content: flex-end;">
+          <div class="form-nav">
             <button id="form-next" class="btn btn--primary">Continue to Contact Info →</button>
           </div>
 
@@ -155,10 +152,10 @@
               <span class="review-key">Drawings Uploaded</span>
               <span class="review-val" id="review-files">—</span>
             </div>
-            <button id="form-back" style="background:none;border:none;font-size:0.875rem;color:var(--gray-500);cursor:pointer;padding:0;margin-top:8px;">← Edit project details</button>
+            <button id="form-back" class="btn--text mt-xs">← Edit project details</button>
           </div>
 
-          <h3 style="margin-bottom: 20px;">How do we contact you?</h3>
+          <h3 class="mb-20">How do we contact you?</h3>
 
           <div class="form-row">
             <div class="form-group">
@@ -172,7 +169,7 @@
           </div>
 
           <div class="form-group">
-            <label class="form-label" for="email">Email <span style="color:var(--gray-800);">*</span></label>
+            <label class="form-label" for="email">Email <span class="required">*</span></label>
             <input type="email" id="email" name="email" class="form-input" placeholder="your@company.com" required>
           </div>
 
@@ -181,13 +178,13 @@
             <input type="tel" id="phone" name="phone" class="form-input" placeholder="(___) ___-____">
           </div>
 
-          <div style="padding: 16px 20px; background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: 6px; font-size: 0.875rem; color: var(--gray-600); margin-bottom: 28px;">
-            By submitting this form you agree to our <a href="../privacy-policy/" style="color: var(--gray-700); text-decoration: underline; text-underline-offset: 3px;">Privacy Policy</a>. We don't share your information. We'll use it to respond to your quote request and nothing else.
+          <div class="infobox mb-md">
+            By submitting this form you agree to our <a href="../privacy-policy/" class="link link--dark">Privacy Policy</a>. We don't share your information. We'll use it to respond to your quote request and nothing else.
           </div>
 
-          <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+          <div class="form-actions">
             <button type="submit" class="btn btn--primary">Submit Quote Request</button>
-            <button id="form-back-2" onclick="document.getElementById('form-back').click()" style="background:none;border:none;font-size:0.875rem;color:var(--gray-500);cursor:pointer;">← Back</button>
+            <button id="form-back-2" onclick="document.getElementById('form-back').click()" class="btn--text">← Back</button>
           </div>
 
         </div>
@@ -197,60 +194,60 @@
       <!-- END FORM -->
 
       <!-- Sidebar -->
-      <div style="position: sticky; top: 88px; display: flex; flex-direction: column; gap: 16px;">
+      <aside class="sidebar">
 
-        <div style="padding: 24px; border: 1px solid var(--gray-200); border-radius: 6px;">
-          <div class="label" style="margin-bottom: 12px;">What Happens Next</div>
-          <div style="display: flex; flex-direction: column; gap: 14px; margin-top: 4px;">
-            <div style="display: flex; gap: 12px; font-size: 0.875rem;">
-              <span style="font-weight: 700; color: var(--gray-900); flex-shrink: 0;">1.</span>
-              <span style="color: var(--gray-600);">We review your drawings and project description.</span>
+        <div class="sidebar__card">
+          <div class="label">What Happens Next</div>
+          <div class="steps-list">
+            <div class="steps-list__item">
+              <span class="steps-list__item__num">1.</span>
+              <span class="steps-list__item__text">We review your drawings and project description.</span>
             </div>
-            <div style="display: flex; gap: 12px; font-size: 0.875rem;">
-              <span style="font-weight: 700; color: var(--gray-900); flex-shrink: 0;">2.</span>
-              <span style="color: var(--gray-600);">We return a scope confirmation with timeline and price.</span>
+            <div class="steps-list__item">
+              <span class="steps-list__item__num">2.</span>
+              <span class="steps-list__item__text">We return a scope confirmation with timeline and price.</span>
             </div>
-            <div style="display: flex; gap: 12px; font-size: 0.875rem;">
-              <span style="font-weight: 700; color: var(--gray-900); flex-shrink: 0;">3.</span>
-              <span style="color: var(--gray-600);">You approve scope. Production begins.</span>
+            <div class="steps-list__item">
+              <span class="steps-list__item__num">3.</span>
+              <span class="steps-list__item__text">You approve scope. Production begins.</span>
             </div>
-            <div style="display: flex; gap: 12px; font-size: 0.875rem;">
-              <span style="font-weight: 700; color: var(--gray-900); flex-shrink: 0;">4.</span>
-              <span style="color: var(--gray-600);">Preview stage. Final delivery. Done.</span>
+            <div class="steps-list__item">
+              <span class="steps-list__item__num">4.</span>
+              <span class="steps-list__item__text">Preview stage. Final delivery. Done.</span>
             </div>
           </div>
         </div>
 
-        <div style="padding: 24px; border: 1px solid var(--gray-200); border-radius: 6px;">
-          <div class="label" style="margin-bottom: 12px;">Level of Detail</div>
-          <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div class="sidebar__card">
+          <div class="label">Level of Detail</div>
+          <div class="level-summary">
             <div>
-              <div style="font-size: 0.875rem; font-weight: 700; color: var(--gray-800); margin-bottom: 4px;">Quick Draw</div>
-              <div style="font-size: 0.8125rem; color: var(--gray-500);">Early-stage or budget-sensitive projects.</div>
+              <div class="level-summary__name">Quick Draw</div>
+              <div class="level-summary__desc">Early-stage or budget-sensitive projects.</div>
             </div>
             <div>
-              <div style="font-size: 0.875rem; font-weight: 700; color: var(--gray-800); margin-bottom: 4px;">Typical Detail</div>
-              <div style="font-size: 0.8125rem; color: var(--gray-500);">Standard submittals. The MP brand standard.</div>
+              <div class="level-summary__name">Typical Detail</div>
+              <div class="level-summary__desc">Standard submittals. The MP brand standard.</div>
             </div>
             <div>
-              <div style="font-size: 0.875rem; font-weight: 700; color: var(--gray-800); margin-bottom: 4px;">Advanced Detailing</div>
-              <div style="font-size: 0.8125rem; color: var(--gray-500);">Active design-phase integration and collaboration.</div>
+              <div class="level-summary__name">Advanced Detailing</div>
+              <div class="level-summary__desc">Active design-phase integration and collaboration.</div>
             </div>
           </div>
-          <a href="../shop-drawing-services/level-of-detail-options/" style="font-size: 0.8125rem; color: var(--gray-600); text-decoration: underline; text-underline-offset: 3px; margin-top: 14px; display: inline-block;">Full comparison guide →</a>
+          <a href="../shop-drawing-services/level-of-detail-options/" class="link link--muted link--sm link--inline">Full comparison guide →</a>
         </div>
 
-        <div style="padding: 24px; border: 1px solid var(--gray-200); border-radius: 6px;">
-          <div class="label" style="margin-bottom: 12px;">Not Ready to Submit?</div>
-          <p style="font-size: 0.875rem; color: var(--gray-600); margin-bottom: 14px; max-width: none;">Browse sample drawings first, or read about our process.</p>
-          <div style="display: flex; flex-direction: column; gap: 8px;">
-            <a href="../sample-drawings/" style="font-size: 0.875rem; color: var(--gray-700); font-weight: 600;">View Sample Drawings →</a>
-            <a href="../our-process/" style="font-size: 0.875rem; color: var(--gray-700); font-weight: 600;">Learn Our Process →</a>
-            <a href="../contact/" style="font-size: 0.875rem; color: var(--gray-700); font-weight: 600;">Contact Us Directly →</a>
+        <div class="sidebar__card">
+          <div class="label">Not Ready to Submit?</div>
+          <p>Browse sample drawings first, or read about our process.</p>
+          <div class="sidebar__links">
+            <a href="../sample-drawings/">View Sample Drawings →</a>
+            <a href="../our-process/">Learn Our Process →</a>
+            <a href="../contact/">Contact Us Directly →</a>
           </div>
         </div>
 
-      </div>
+      </aside>
       <!-- END SIDEBAR -->
 
     </div>

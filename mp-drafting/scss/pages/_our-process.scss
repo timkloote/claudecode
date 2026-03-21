@@ -1,0 +1,10 @@
+// ── Our Process — page-specific styles ──
+// Global patterns (sidebar, page-note, arrow-list, etc.) are in components.
+// Only page-specific overrides belong here.
+
+// Inline CTA button wrapper
+.process-content {
+  &__cta {
+    margin-top: 20px;
+  }
+}

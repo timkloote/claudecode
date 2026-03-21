@@ -1,0 +1,220 @@
+// ── CTA note: small hint under a button ──
+.cta-note {
+  margin-top: 8px;
+  font-size: 0.8125rem;
+  color: var(--gray-500);
+}
+
+// ── CTA group: flex row of btn + cta-note pairs ──
+.cta-group {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  // Column variant for stacked CTAs inside a split column
+  &--col {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+// ── Article callout block (left-border highlight) ──
+.article-callout {
+  padding: 20px 24px;
+  background: var(--gray-50);
+  border-left: 3px solid var(--gray-300);
+  margin: 32px 0;
+  border-radius: 0 4px 4px 0;
+
+  p {
+    margin: 0;
+    font-size: 0.9375rem;
+    color: var(--gray-600);
+  }
+
+  strong { color: var(--gray-800); }
+}
+
+// ── Inline CTA box (inside article body) ──
+.inline-cta {
+  padding: 28px 32px;
+  border: 1px solid var(--gray-200);
+  border-radius: 6px;
+  margin-top: 48px;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__body {
+    flex: 1;
+    min-width: 240px;
+
+    h4 { margin-bottom: 8px; }
+
+    p {
+      font-size: 0.9375rem;
+      color: var(--gray-600);
+      margin: 0;
+    }
+  }
+}
+
+// ── Infobox: gray bordered info block ──
+.infobox {
+  padding: 16px 20px;
+  background: var(--gray-50);
+  border: 1px solid var(--gray-200);
+  border-radius: 6px;
+  font-size: 0.875rem;
+  color: var(--gray-600);
+}
+
+// ── Comparison box: drafting vs. engineering etc. ──
+.compare-box {
+  padding: 20px 24px;
+  background: var(--gray-50);
+  border: 1px solid var(--gray-200);
+  border-radius: 6px;
+  margin-top: 16px;
+
+  &__heading {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--gray-800);
+    margin-bottom: 8px;
+  }
+
+  &__rows {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.875rem;
+    color: var(--gray-600);
+  }
+
+  &__row {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__label {
+    font-weight: 600;
+    color: var(--gray-700);
+    min-width: 80px;
+  }
+}
+
+// ── Quote panel: "what we hear most" testimonial box ──
+.quote-panel {
+  padding: 28px 32px;
+  background: white;
+  border: 1px solid var(--gray-200);
+  border-radius: 6px;
+
+  .label { margin-bottom: 16px; }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+  }
+
+  &__hint {
+    margin-top: 16px;
+    font-size: 0.875rem;
+    color: var(--gray-500);
+  }
+}
+
+// ── Email example: sample subject/body block ──
+.email-example {
+  padding: 24px 28px;
+  border: 1px solid var(--gray-200);
+  border-radius: 6px;
+  background: white;
+
+  .label { margin-bottom: 14px; }
+
+  &__block {
+    background: var(--gray-50);
+    border: 1px solid var(--gray-200);
+    border-radius: 4px;
+    padding: 14px 16px;
+    font-size: 0.875rem;
+    color: var(--gray-700);
+    margin-bottom: 1rem;
+
+    &:last-of-type { margin-bottom: 0; }
+
+    p {
+      max-width: none;
+      margin-bottom: 8px;
+
+      &:last-child { margin-bottom: 0; }
+    }
+  }
+
+  &__field-label {
+    display: block;
+    color: var(--gray-400);
+    font-size: 0.75rem;
+    margin-bottom: 6px;
+  }
+
+  &__note {
+    color: var(--gray-500);
+    font-style: italic;
+  }
+
+  &__hint {
+    margin-top: 14px;
+    font-size: 0.8125rem;
+    color: var(--gray-500);
+  }
+}
+
+// ── GlazierIQ reference box ──
+.glazieriq-box {
+  border: 1px solid var(--gray-200);
+  border-radius: 8px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+
+  &__body {
+    max-width: 580px;
+
+    .label { margin-bottom: 12px; }
+
+    h2 {
+      font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+      margin-bottom: 14px;
+    }
+
+    p { color: var(--gray-600); }
+  }
+
+  &__brand {
+    text-align: right;
+    flex-shrink: 0;
+  }
+
+  &__name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--gray-400);
+    letter-spacing: -0.02em;
+  }
+
+  &__sub {
+    font-size: 0.75rem;
+    color: var(--gray-500);
+    margin-top: 4px;
+  }
+}

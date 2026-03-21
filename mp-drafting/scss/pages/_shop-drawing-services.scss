@@ -1,0 +1,8 @@
+// ── Shop Drawing Services — page-specific styles ──
+
+// Comparison table first-column min width
+.comparison-table {
+  th:first-child {
+    min-width: 200px;
+  }
+}

@@ -1,0 +1,131 @@
+// ── Sticky sidebar ──
+.sidebar {
+  position: sticky;
+  top: 88px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &__card {
+    padding: 24px;
+    border: 1px solid var(--gray-200);
+    border-radius: 6px;
+    background: white;
+
+    .label {
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 0.9375rem;
+      color: var(--gray-600);
+      margin-bottom: 20px;
+      max-width: none;
+    }
+
+    .btn {
+      display: block;
+      text-align: center;
+    }
+
+    &--gray {
+      background: var(--gray-50);
+
+      p { margin-bottom: 16px; }
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    a {
+      font-size: 0.875rem;
+      color: var(--gray-700);
+      font-weight: 600;
+    }
+  }
+}
+
+// ── Steps list (numbered items in sidebar) ──
+.steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 4px;
+
+  &__item {
+    display: flex;
+    gap: 12px;
+    font-size: 0.875rem;
+
+    &__num {
+      font-weight: 700;
+      color: var(--gray-900);
+      flex-shrink: 0;
+    }
+
+    &__text {
+      color: var(--gray-600);
+    }
+  }
+}
+
+// ── Level summary (sidebar level-of-detail list) ──
+.level-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  &__name {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--gray-800);
+    margin-bottom: 4px;
+  }
+
+  &__desc {
+    font-size: 0.8125rem;
+    color: var(--gray-500);
+  }
+}
+
+// ── Jump nav: anchor link list (FAQ page) ──
+.jump-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 24px;
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+    border: 1px solid var(--gray-200);
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--gray-800);
+    font-size: 0.9375rem;
+    font-weight: 500;
+
+    &__arrow { color: var(--gray-400); }
+  }
+}
+
+// ── Contact info list (sidebar contact details) ──
+.contact-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 0.875rem;
+  color: var(--gray-600);
+
+  &__label {
+    display: block;
+    font-weight: 600;
+    color: var(--gray-800);
+    margin-bottom: 2px;
+  }
+}

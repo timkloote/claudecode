@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sass /Users/timkloote/claudecode/mp-drafting/scss/our-process.scss /Users/timkloote/claudecode/mp-drafting/css/our-process.css --style=expanded --no-source-map)",
+      "Bash(sass scss/global.scss css/global.css --style=expanded --no-source-map)",
+      "Bash(sass scss/our-process.scss css/our-process.css --style=expanded --no-source-map)",
+      "Bash(wc -l /Users/timkloote/claudecode/mp-drafting/css/*.css /Users/timkloote/claudecode/mp-drafting/scss/*.scss)",
+      "Bash(sass scss/global.scss css/global.css --style=compressed)",
+      "Bash(sass scss/insights.scss css/insights.css --style=compressed)"
+    ]
+  }
+}

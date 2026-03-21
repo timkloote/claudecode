@@ -7,96 +7,7 @@
   <meta name="description" content="MP Drafting is a U.S.-based drafting team specializing in commercial glazing shop drawings. Founded in 2006. Precision planning for curtain wall, storefront, and related glazing systems.">
   <link rel="canonical" href="/about/">
   <link rel="stylesheet" href="../css/wireframe.css">
-
-  <style>
-    /* Bio drawer */
-    .bio-drawer-overlay {
-      position: fixed; inset: 0;
-      background: rgba(0,0,0,0.45);
-      z-index: 500;
-      opacity: 0; pointer-events: none;
-      transition: opacity 0.3s ease;
-    }
-    .bio-drawer-overlay.open { opacity: 1; pointer-events: all; }
-
-    .bio-drawer {
-      position: fixed; top: 0; right: 0; bottom: 0;
-      width: 800px; max-width: 92vw;
-      background: var(--white);
-      z-index: 501;
-      transform: translateX(100%);
-      transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-      display: flex; flex-direction: column;
-      overflow-y: auto;
-      box-shadow: -4px 0 32px rgba(0,0,0,0.12);
-    }
-    .bio-drawer.open { transform: translateX(0); }
-
-    .bio-drawer-header {
-      position: sticky; top: 0;
-      display: flex; align-items: center; justify-content: flex-end;
-      padding: 16px 20px;
-      background: var(--white);
-      border-bottom: 1px solid var(--gray-200);
-      z-index: 1;
-    }
-    .bio-drawer-close {
-      background: none; border: none; cursor: pointer;
-      color: var(--gray-500); font-size: 1.25rem; line-height: 1;
-      width: 32px; height: 32px;
-      display: flex; align-items: center; justify-content: center;
-      border-radius: 4px;
-      transition: background 0.15s, color 0.15s;
-    }
-    .bio-drawer-close:hover { background: var(--gray-100); color: var(--gray-800); }
-
-    .bio-drawer-photo {
-      width: 100%; aspect-ratio: 4/3;
-      background: var(--gray-200);
-      display: flex; align-items: center; justify-content: center;
-      color: var(--gray-400); font-size: 0.875rem;
-      flex-shrink: 0;
-    }
-
-    .bio-drawer-body { padding: 28px 28px 20px; flex: 1; }
-    .bio-drawer-name { font-size: 1.25rem; font-weight: 700; color: var(--gray-900); margin-bottom: 16px; }
-    .bio-drawer-desc { font-size: 0.9375rem; color: var(--gray-600); line-height: 1.7; max-width: none; }
-
-    .bio-drawer-footer {
-      display: flex; gap: 10px; padding: 20px 28px;
-      border-top: 1px solid var(--gray-200);
-      position: sticky; bottom: 0; background: var(--white);
-    }
-    .bio-drawer-footer button {
-      flex: 1; padding: 10px 16px;
-      border: 1px solid var(--gray-200); border-radius: 4px;
-      background: var(--white); cursor: pointer;
-      font-size: 0.875rem; font-weight: 600; color: var(--gray-700);
-      transition: background 0.15s, border-color 0.15s;
-    }
-    .bio-drawer-footer button:hover { background: var(--gray-50); border-color: var(--gray-400); }
-    .bio-drawer-footer button:disabled { opacity: 0.35; cursor: default; }
-
-    /* Bio cards — clickable */
-    .bio-card {
-      border: 1px solid var(--gray-200); border-radius: 6px; overflow: hidden;
-      cursor: pointer; transition: box-shadow 0.15s, border-color 0.15s;
-      display: flex; flex-direction: column;
-    }
-    .bio-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); border-color: var(--gray-400); }
-    .bio-card-photo {
-      height: 180px; background: var(--gray-200);
-      display: flex; align-items: center; justify-content: center;
-      color: var(--gray-400); font-size: 0.875rem;
-    }
-    .bio-card-info { padding: 16px 18px 18px; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
-    .bio-card-name { font-size: 0.9375rem; font-weight: 700; color: var(--gray-800); }
-    .bio-card-arrow { color: var(--gray-400); font-size: 0.875rem; flex-shrink: 0; transition: color 0.15s; }
-    .bio-card:hover .bio-card-arrow { color: var(--gray-700); }
-
-    .bio-card--placeholder { opacity: 0.5; cursor: default; }
-    .bio-card--placeholder:hover { box-shadow: none; border-color: var(--gray-200); }
-  </style>
+  <link rel="stylesheet" href="../css/global.css">
 
   <script type="application/ld+json">
   {
@@ -199,26 +110,26 @@
 </div>
 
 <!-- SECTION 1: HERO -->
-<div class="page-header">
+<header class="page-header">
   <div class="container">
     <div class="label">About MP Drafting</div>
     <h1>A U.S.-based drafting team built for commercial glazing planning</h1>
     <p>MP Drafting supports glazing contractors with precision planning that holds up in the field and in submittals. We are fully U.S.-based, with the team capacity to take on real production volume without losing clarity or responsiveness.</p>
-    <ul style="margin-top: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 0.9375rem; color: var(--gray-300); list-style: none;">
-      <li style="display: flex; gap: 10px; align-items: flex-start;"><span style="color: var(--gray-400); margin-top: 2px;">→</span> Fully U.S.-based.</li>
-      <li style="display: flex; gap: 10px; align-items: flex-start;"><span style="color: var(--gray-400); margin-top: 2px;">→</span> Built for coordinated, architect-ready shop drawings (not "generic" sets).</li>
-      <li style="display: flex; gap: 10px; align-items: flex-start;"><span style="color: var(--gray-400); margin-top: 2px;">→</span> Known for "professional appearance" and "complete dimensioning."</li>
+    <ul class="dark-bullets mt-md">
+      <li><span class="dark-bullets__icon">→</span> Fully U.S.-based.</li>
+      <li><span class="dark-bullets__icon">→</span> Built for coordinated, architect-ready shop drawings (not "generic" sets).</li>
+      <li><span class="dark-bullets__icon">→</span> Known for "professional appearance" and "complete dimensioning."</li>
     </ul>
-    <div class="btn-group" style="margin-top: 28px;">
+    <div class="btn-group mt-md">
       <a href="../request-quote/" class="btn btn--white">Request a Quote</a>
       <a href="../sample-drawings/" class="btn btn--ghost">View Sample Drawings</a>
     </div>
-    <div style="margin-top: 10px; display: flex; gap: 40px; flex-wrap: wrap;">
-      <p style="font-size: 0.8125rem; color: var(--gray-500);">Send drawings and scope. We will confirm what's needed before production starts.</p>
-      <p style="font-size: 0.8125rem; color: var(--gray-500);">The fastest way to see if our standard matches yours.</p>
+    <div class="cta-hints">
+      <p>Send drawings and scope. We will confirm what's needed before production starts.</p>
+      <p>The fastest way to see if our standard matches yours.</p>
     </div>
   </div>
-</div>
+</header>
 
 <div class="divider"></div>
 
@@ -228,34 +139,34 @@
     <div class="split">
       <div>
         <div class="label">Team Capacity</div>
-        <h2 style="margin-top: 12px;">Capacity you can plan around</h2>
+        <h2 class="mt-sm">Capacity you can plan around</h2>
         <p class="mt-sm">MP Drafting grew from a small team into a production group of roughly 20 people, built to support commercial glazing projects with repeatable standards and internal review.</p>
-        <div style="margin-top: 28px; display: flex; flex-direction: column; gap: 12px;">
-          <div style="display: flex; gap: 14px; align-items: flex-start; padding: 16px 20px; background: white; border: 1px solid var(--gray-200); border-radius: 6px;">
-            <span style="background: var(--gray-800); color: white; font-size: 0.75rem; font-weight: 700; border-radius: 50%; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">~</span>
+        <div class="step-list mt-md">
+          <div class="step-card">
+            <span class="step-badge">~</span>
             <div>
-              <div style="font-weight: 600; color: var(--gray-800); font-size: 0.9375rem; margin-bottom: 3px;">~20 team members</div>
-              <div style="font-size: 0.875rem; color: var(--gray-500);">Production, coordination, leadership</div>
+              <div class="step-card__title">~20 team members</div>
+              <div class="step-card__desc">Production, coordination, leadership</div>
             </div>
           </div>
-          <div style="display: flex; gap: 14px; align-items: flex-start; padding: 16px 20px; background: white; border: 1px solid var(--gray-200); border-radius: 6px;">
-            <span style="background: var(--gray-800); color: white; font-size: 0.75rem; font-weight: 700; border-radius: 50%; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">📍</span>
+          <div class="step-card">
+            <span class="step-badge">📍</span>
             <div>
-              <div style="font-weight: 600; color: var(--gray-800); font-size: 0.9375rem; margin-bottom: 3px;">Fully U.S. Based</div>
-              <div style="font-size: 0.875rem; color: var(--gray-500);">We serve coast-to-coast including Canada</div>
+              <div class="step-card__title">Fully U.S. Based</div>
+              <div class="step-card__desc">We serve coast-to-coast including Canada</div>
             </div>
           </div>
-          <div style="display: flex; gap: 14px; align-items: flex-start; padding: 16px 20px; background: white; border: 1px solid var(--gray-200); border-radius: 6px;">
-            <span style="background: var(--gray-800); color: white; font-size: 0.75rem; font-weight: 700; border-radius: 50%; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">✓</span>
+          <div class="step-card">
+            <span class="step-badge">✓</span>
             <div>
-              <div style="font-weight: 600; color: var(--gray-800); font-size: 0.9375rem; margin-bottom: 3px;">Structured QA and review</div>
-              <div style="font-size: 0.875rem; color: var(--gray-500);">Part of how MP operates, not an add-on</div>
+              <div class="step-card__title">Structured QA and review</div>
+              <div class="step-card__desc">Part of how MP operates, not an add-on</div>
             </div>
           </div>
         </div>
-        <div style="margin-top: 24px;">
+        <div class="mt-24">
           <a href="../our-process/" class="btn btn--secondary">View Our Process</a>
-          <p style="margin-top: 8px; font-size: 0.8125rem; color: var(--gray-500);">See the preview step that prevents late-stage surprises.</p>
+          <p class="cta-note">See the preview step that prevents late-stage surprises.</p>
         </div>
       </div>
       <div>
@@ -273,48 +184,36 @@
     <div class="split">
       <div>
         <div class="label">What Clients Say</div>
-        <h2 style="margin-top: 12px;">What customers call out in our drawings</h2>
+        <h2 class="mt-sm">What customers call out in our drawings</h2>
         <p class="mt-sm">We consistently hear the same feedback from contractors switching from another provider:</p>
-        <div style="margin-top: 24px; display: flex; flex-direction: column; gap: 12px;">
-          <div style="display: flex; gap: 14px; align-items: flex-start; font-size: 0.9375rem;">
-            <span style="color: var(--gray-400); margin-top: 2px; flex-shrink: 0;">→</span>
-            <span style="color: var(--gray-700); font-style: italic;">"Completeness of the shops"</span>
-          </div>
-          <div style="display: flex; gap: 14px; align-items: flex-start; font-size: 0.9375rem;">
-            <span style="color: var(--gray-400); margin-top: 2px; flex-shrink: 0;">→</span>
-            <span style="color: var(--gray-700); font-style: italic;">"Professional appearance"</span>
-          </div>
-          <div style="display: flex; gap: 14px; align-items: flex-start; font-size: 0.9375rem;">
-            <span style="color: var(--gray-400); margin-top: 2px; flex-shrink: 0;">→</span>
-            <span style="color: var(--gray-700); font-style: italic;">"Easy to work with"</span>
-          </div>
-          <div style="display: flex; gap: 14px; align-items: flex-start; font-size: 0.9375rem;">
-            <span style="color: var(--gray-400); margin-top: 2px; flex-shrink: 0;">→</span>
-            <span style="color: var(--gray-700); font-style: italic;">"A big one is that we can get a hold of them easily."</span>
-          </div>
-        </div>
-        <div style="margin-top: 28px;">
+        <ul class="arrow-list mt-md">
+          <li><span class="arrow-list__icon">→</span><em>"Completeness of the shops"</em></li>
+          <li><span class="arrow-list__icon">→</span><em>"Professional appearance"</em></li>
+          <li><span class="arrow-list__icon">→</span><em>"Easy to work with"</em></li>
+          <li><span class="arrow-list__icon">→</span><em>"A big one is that we can get a hold of them easily."</em></li>
+        </ul>
+        <div class="mt-md">
           <a href="../sample-drawings/" class="btn btn--secondary">View Sample Drawings</a>
-          <p style="margin-top: 8px; font-size: 0.8125rem; color: var(--gray-500);">Look for fasteners, layout dimensions, column lines, and clear notes.</p>
+          <p class="cta-note">Look for fasteners, layout dimensions, column lines, and clear notes.</p>
         </div>
       </div>
       <div>
-        <div style="display: flex; flex-direction: column; gap: 16px;">
-          <div style="padding: 20px 24px; background: var(--gray-50); border-left: 3px solid var(--gray-300); border-radius: 0 4px 4px 0;">
-            <p style="font-size: 0.9375rem; color: var(--gray-700); font-style: italic; margin-bottom: 10px;">"The architect approved it on the first submission. That never happens."</p>
-            <div style="font-size: 0.8125rem; color: var(--gray-500); font-weight: 600;">Glazing contractor, commercial storefront project</div>
+        <div class="pullquote-stack">
+          <div class="pullquote pullquote--gray">
+            <p class="pullquote__quote">"The architect approved it on the first submission. That never happens."</p>
+            <p class="pullquote__attr">Glazing contractor, commercial storefront project</p>
           </div>
-          <div style="padding: 20px 24px; background: var(--gray-50); border-left: 3px solid var(--gray-300); border-radius: 0 4px 4px 0;">
-            <p style="font-size: 0.9375rem; color: var(--gray-700); font-style: italic; margin-bottom: 10px;">"The field crew didn't have a single question about the sill conditions. Every dimension they needed was right there."</p>
-            <div style="font-size: 0.8125rem; color: var(--gray-500); font-weight: 600;">Project manager, curtain wall job</div>
+          <div class="pullquote pullquote--gray">
+            <p class="pullquote__quote">"The field crew didn't have a single question about the sill conditions. Every dimension they needed was right there."</p>
+            <p class="pullquote__attr">Project manager, curtain wall job</p>
           </div>
-          <div style="padding: 20px 24px; background: var(--gray-50); border-left: 3px solid var(--gray-300); border-radius: 0 4px 4px 0;">
-            <p style="font-size: 0.9375rem; color: var(--gray-700); font-style: italic; margin-bottom: 10px;">"A big one is that they can get a hold of us easily."</p>
-            <div style="font-size: 0.8125rem; color: var(--gray-500); font-weight: 600;">Glazing contractor, ongoing relationship</div>
+          <div class="pullquote pullquote--gray">
+            <p class="pullquote__quote">"A big one is that they can get a hold of us easily."</p>
+            <p class="pullquote__attr">Glazing contractor, ongoing relationship</p>
           </div>
-          <div style="padding: 20px 24px; background: var(--gray-50); border-left: 3px solid var(--gray-300); border-radius: 0 4px 4px 0;">
-            <p style="font-size: 0.9375rem; color: var(--gray-700); font-style: italic; margin-bottom: 10px;">"Complete dimensioning, it just generates fewer questions before fabrication."</p>
-            <div style="font-size: 0.8125rem; color: var(--gray-500); font-weight: 600;">Fabricator, metal panel project</div>
+          <div class="pullquote pullquote--gray">
+            <p class="pullquote__quote">"Complete dimensioning, it just generates fewer questions before fabrication."</p>
+            <p class="pullquote__attr">Fabricator, metal panel project</p>
           </div>
         </div>
       </div>
@@ -330,28 +229,28 @@
     <div class="split">
       <div>
         <div class="label">Our Story</div>
-        <h2 style="margin-top: 12px;">Built in Michigan. Grown through production work.</h2>
+        <h2 class="mt-sm">Built in Michigan. Grown through production work.</h2>
         <p class="mt-sm">MP Drafting was founded in 2006 and has been rooted in southeastern Michigan from the start. Over time, the team expanded from a small operation into a larger production group supporting multiple service lines across glazing planning and related technical work.</p>
-        <ul style="margin-top: 24px; display: flex; flex-direction: column; gap: 10px; font-size: 0.9375rem; color: var(--gray-700);">
-          <li style="display: flex; gap: 10px; align-items: flex-start;"><span style="color: var(--gray-500); margin-top: 2px;">→</span> Founded in 2006 by Marcus Dreher</li>
-          <li style="display: flex; gap: 10px; align-items: flex-start;"><span style="color: var(--gray-500); margin-top: 2px;">→</span> Michigan-based operations</li>
-          <li style="display: flex; gap: 10px; align-items: flex-start;"><span style="color: var(--gray-500); margin-top: 2px;">→</span> Growth to a ~20-person team over time</li>
+        <ul class="arrow-list arrow-list--muted mt-md">
+          <li><span class="arrow-list__icon">→</span> Founded in 2006 by Marcus Dreher</li>
+          <li><span class="arrow-list__icon">→</span> Michigan-based operations</li>
+          <li><span class="arrow-list__icon">→</span> Growth to a ~20-person team over time</li>
         </ul>
-        <div style="margin-top: 28px;">
+        <div class="mt-md">
           <a href="../shop-drawing-services/" class="btn btn--secondary">Explore Shop Drawing Services</a>
-          <p style="margin-top: 8px; font-size: 0.8125rem; color: var(--gray-500);">Start with the scope you need, then pick the level of detail that fits.</p>
+          <p class="cta-note">Start with the scope you need, then pick the level of detail that fits.</p>
         </div>
       </div>
       <div>
-        <div class="placeholder placeholder--lg" style="margin-bottom: 20px;">[ Michigan / Wixom / office image ]</div>
-        <div style="padding: 20px 24px; background: white; border: 1px solid var(--gray-200); border-radius: 6px;">
-          <div class="label" style="margin-bottom: 10px;">GlazierIQ Network</div>
-          <p style="font-size: 0.875rem; color: var(--gray-600); max-width: none; margin-bottom: 14px;">MP Drafting is part of an integrated glazing industry ecosystem connecting drafting, training, and fabrication support.</p>
-          <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-            <span style="background: var(--gray-100); border: 1px solid var(--gray-200); border-radius: 4px; padding: 4px 10px; font-size: 0.75rem; font-weight: 600; color: var(--gray-700);">GlazierIQ</span>
-            <span style="background: var(--gray-100); border: 1px solid var(--gray-200); border-radius: 4px; padding: 4px 10px; font-size: 0.75rem; font-weight: 600; color: var(--gray-700);">LearnGlazing</span>
-            <span style="background: var(--gray-100); border: 1px solid var(--gray-200); border-radius: 4px; padding: 4px 10px; font-size: 0.75rem; font-weight: 600; color: var(--gray-700);">MP Drafting</span>
-            <span style="background: var(--gray-100); border: 1px solid var(--gray-200); border-radius: 4px; padding: 4px 10px; font-size: 0.75rem; font-weight: 600; color: var(--gray-700);">WestMetal Group</span>
+        <div class="placeholder placeholder--lg mb-20">[ Michigan / Wixom / office image ]</div>
+        <div class="sidebar__card">
+          <div class="label">GlazierIQ Network</div>
+          <p>MP Drafting is part of an integrated glazing industry ecosystem connecting drafting, training, and fabrication support.</p>
+          <div class="tag-group">
+            <span class="tag">GlazierIQ</span>
+            <span class="tag">LearnGlazing</span>
+            <span class="tag">MP Drafting</span>
+            <span class="tag">WestMetal Group</span>
           </div>
         </div>
       </div>
@@ -367,67 +266,66 @@
     <div class="split">
       <div>
         <div class="label">Our Approach</div>
-        <h2 style="margin-top: 12px;">Structured from day one</h2>
+        <h2 class="mt-sm">Structured from day one</h2>
         <p class="mt-sm">When a project is in motion, PMs do not have time to manage a drafting vendor. Our workflow is designed to reduce back-and-forth and prevent delays caused by missing inputs.</p>
-        <ul style="margin-top: 24px; display: flex; flex-direction: column; gap: 10px; font-size: 0.9375rem; color: var(--gray-700);">
-          <li style="display: flex; gap: 10px; align-items: flex-start;"><span style="color: var(--gray-500); margin-top: 2px;">→</span> Preview step upfront to catch missing info and remove preventable delays</li>
-          <li style="display: flex; gap: 10px; align-items: flex-start;"><span style="color: var(--gray-500); margin-top: 2px;">→</span> Kickoff (KO) form to capture job-specific preferences and scope early</li>
-          <li style="display: flex; gap: 10px; align-items: flex-start;"><span style="color: var(--gray-500); margin-top: 2px;">→</span> Clear questions and coordination during drafting, including live review calls when needed</li>
+        <ul class="arrow-list arrow-list--muted mt-md">
+          <li><span class="arrow-list__icon">→</span> Preview step upfront to catch missing info and remove preventable delays</li>
+          <li><span class="arrow-list__icon">→</span> Kickoff (KO) form to capture job-specific preferences and scope early</li>
+          <li><span class="arrow-list__icon">→</span> Clear questions and coordination during drafting, including live review calls when needed</li>
         </ul>
-        <div class="btn-group" style="margin-top: 28px;">
+        <div class="btn-group mt-md">
           <a href="../request-quote/" class="btn btn--primary">Request a Quote</a>
           <a href="../shop-drawing-services/level-of-detail-options/" class="btn btn--secondary">See Level of Detail Options</a>
         </div>
-        <div style="margin-top: 10px; display: flex; gap: 40px; flex-wrap: wrap;">
-          <p style="font-size: 0.8125rem; color: var(--gray-500);">If you are unsure which detail level fits, choose the phase you are in. We will confirm it in review.</p>
-          <p style="font-size: 0.8125rem; color: var(--gray-500);">Built to remove first-job friction without lowering standards.</p>
+        <div class="cta-hints">
+          <p>If you are unsure which detail level fits, choose the phase you are in. We will confirm it in review.</p>
+          <p>Built to remove first-job friction without lowering standards.</p>
         </div>
       </div>
       <div>
-        <div style="padding: 28px 32px; border: 1px solid var(--gray-200); border-radius: 6px; background: var(--gray-50);">
-          <div class="label" style="margin-bottom: 20px;">How a typical project runs</div>
-          <div style="display: flex; flex-direction: column; gap: 0;">
-            <div style="display: flex; gap: 16px; align-items: flex-start; padding-bottom: 20px;">
-              <div style="display: flex; flex-direction: column; align-items: center; flex-shrink: 0;">
-                <span style="background: var(--gray-800); color: white; font-size: 0.75rem; font-weight: 700; border-radius: 50%; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center;">1</span>
-                <div style="width: 1px; background: var(--gray-300); flex: 1; margin-top: 6px; min-height: 24px;"></div>
+        <div class="process-steps-card">
+          <div class="label">How a typical project runs</div>
+          <ol class="process-steps-card__list">
+            <li class="process-steps-card__item">
+              <div class="process-steps-card__badge-col">
+                <span class="process-steps-card__badge">1</span>
+                <div class="process-steps-card__connector"></div>
               </div>
-              <div style="padding-bottom: 4px;">
-                <div style="font-size: 0.875rem; font-weight: 600; color: var(--gray-800); margin-bottom: 3px;">Quote Intake + KO Form</div>
-                <div style="font-size: 0.8125rem; color: var(--gray-500);">Submit drawings and scope. Job-specific preferences captured before production starts.</div>
+              <div class="process-steps-card__content">
+                <div class="process-steps-card__title">Quote Intake + KO Form</div>
+                <div class="process-steps-card__desc">Submit drawings and scope. Job-specific preferences captured before production starts.</div>
               </div>
-            </div>
-            <div style="display: flex; gap: 16px; align-items: flex-start; padding-bottom: 20px;">
-              <div style="display: flex; flex-direction: column; align-items: center; flex-shrink: 0;">
-                <span style="background: var(--gray-800); color: white; font-size: 0.75rem; font-weight: 700; border-radius: 50%; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center;">2</span>
-                <div style="width: 1px; background: var(--gray-300); flex: 1; margin-top: 6px; min-height: 24px;"></div>
+            </li>
+            <li class="process-steps-card__item">
+              <div class="process-steps-card__badge-col">
+                <span class="process-steps-card__badge">2</span>
+                <div class="process-steps-card__connector"></div>
               </div>
-  
-                            <div style="padding-bottom: 4px;">
-                <div style="font-size: 0.875rem; font-weight: 600; color: var(--gray-800); margin-bottom: 3px;">Preview Stage</div>
-                <div style="font-size: 0.8125rem; color: var(--gray-500);">Working set for your review. Feedback consolidated and addressed before final delivery.</div>
+              <div class="process-steps-card__content">
+                <div class="process-steps-card__title">Preview Stage</div>
+                <div class="process-steps-card__desc">Working set for your review. Feedback consolidated and addressed before final delivery.</div>
               </div>
-            </div>
-            <div style="display: flex; gap: 16px; align-items: flex-start; padding-bottom: 20px;">
-              <div style="display: flex; flex-direction: column; align-items: center; flex-shrink: 0;">
-                <span style="background: var(--gray-800); color: white; font-size: 0.75rem; font-weight: 700; border-radius: 50%; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center;">3</span>
-                <div style="width: 1px; background: var(--gray-300); flex: 1; margin-top: 6px; min-height: 24px;"></div>
+            </li>
+            <li class="process-steps-card__item">
+              <div class="process-steps-card__badge-col">
+                <span class="process-steps-card__badge">3</span>
+                <div class="process-steps-card__connector"></div>
               </div>
-             <div style="padding-bottom: 4px;">
-                <div style="font-size: 0.875rem; font-weight: 600; color: var(--gray-800); margin-bottom: 3px;">Production</div>
-                <div style="font-size: 0.8125rem; color: var(--gray-500);">Drafting against confirmed scope. Questions are handled by the production team.</div>
+              <div class="process-steps-card__content">
+                <div class="process-steps-card__title">Production</div>
+                <div class="process-steps-card__desc">Drafting against confirmed scope. Questions are handled by the production team.</div>
               </div>
-            </div>
-            <div style="display: flex; gap: 16px; align-items: flex-start;">
-              <div style="display: flex; flex-direction: column; align-items: center; flex-shrink: 0;">
-                <span style="background: var(--gray-800); color: white; font-size: 0.75rem; font-weight: 700; border-radius: 50%; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center;">4</span>
+            </li>
+            <li class="process-steps-card__item">
+              <div class="process-steps-card__badge-col">
+                <span class="process-steps-card__badge">4</span>
               </div>
-              <div>
-                <div style="font-size: 0.875rem; font-weight: 600; color: var(--gray-800); margin-bottom: 3px;">Final Delivery</div>
-                <div style="font-size: 0.8125rem; color: var(--gray-500);">Organized submittal set. PDF and DWG per requirements. Files archived.</div>
+              <div class="process-steps-card__content">
+                <div class="process-steps-card__title">Final Delivery</div>
+                <div class="process-steps-card__desc">Organized submittal set. PDF and DWG per requirements. Files archived.</div>
               </div>
-            </div>
-          </div>
+            </li>
+          </ol>
         </div>
       </div>
     </div>
@@ -442,26 +340,30 @@
     <div class="split">
       <div>
         <div class="label">Engineering</div>
-        <h2 style="margin-top: 12px;">Planning first. Engineering as structural validation.</h2>
+        <h2 class="mt-sm">Planning first. Engineering as structural validation.</h2>
         <p class="mt-sm">MP Drafting produces coordinated shop drawings that resolve real-world conditions, fabrication detail, and field layout clarity. When engineering is required, it functions as structural validation and is coordinated in a way that keeps roles clear. We do not present drafting as a substitute for a licensed professional engineer.</p>
-        <ul style="margin-top: 24px; display: flex; flex-direction: column; gap: 10px; font-size: 0.9375rem; color: var(--gray-700);">
-          <li style="display: flex; gap: 10px; align-items: flex-start;"><span style="color: var(--gray-500); margin-top: 2px;">→</span> Shop drawings coordinate reality: dimensions, surrounding conditions, and installation clarity</li>
-          <li style="display: flex; gap: 10px; align-items: flex-start;"><span style="color: var(--gray-500); margin-top: 2px;">→</span> Engineering validates structural performance and delegated design intent (when required)</li>
+        <ul class="arrow-list arrow-list--muted mt-md">
+          <li><span class="arrow-list__icon">→</span> Shop drawings coordinate reality: dimensions, surrounding conditions, and installation clarity</li>
+          <li><span class="arrow-list__icon">→</span> Engineering validates structural performance and delegated design intent (when required)</li>
         </ul>
-        <div style="margin-top: 28px;">
+        <div class="mt-md">
           <a href="../shop-drawing-services/engineering-technical-support/" class="btn btn--secondary">Engineering &amp; Technical Support</a>
-          <p style="margin-top: 8px; font-size: 0.8125rem; color: var(--gray-500);">Clear boundaries, clean coordination.</p>
+          <p class="cta-note">Clear boundaries, clean coordination.</p>
         </div>
       </div>
       <div>
-        <div class="placeholder placeholder--lg" style="margin-bottom: 20px;">[ Drafting ↔ Engineering coordination diagram ]</div>
-        <div style="padding: 20px 24px; background: white; border: 1px solid var(--gray-200); border-radius: 6px;">
-          <div style="font-size: 0.875rem; font-weight: 600; color: var(--gray-800); margin-bottom: 12px;">Scope clarity: what each role covers</div>
-          <div style="display: grid; grid-template-columns: 100px 1fr; gap: 0; border: 1px solid var(--gray-200); border-radius: 4px; overflow: hidden; font-size: 0.875rem;">
-            <span style="background: var(--gray-50); padding: 10px 12px; border-bottom: 1px solid var(--gray-200); font-weight: 600; color: var(--gray-700);">Drafting</span>
-            <span style="padding: 10px 12px; border-bottom: 1px solid var(--gray-200); color: var(--gray-600);">Coordination, layout, surrounding conditions, submittals</span>
-            <span style="background: var(--gray-50); padding: 10px 12px; font-weight: 600; color: var(--gray-700);">Engineering</span>
-            <span style="padding: 10px 12px; color: var(--gray-600);">Structural validation, load calculations, PE stamp</span>
+        <div class="placeholder placeholder--lg mb-20">[ Drafting ↔ Engineering coordination diagram ]</div>
+        <div class="sidebar__card">
+          <div class="compare-box__heading">Scope clarity: what each role covers</div>
+          <div class="compare-box__rows">
+            <div class="compare-box__row">
+              <span class="compare-box__label">Drafting</span>
+              <span>Coordination, layout, surrounding conditions, submittals</span>
+            </div>
+            <div class="compare-box__row">
+              <span class="compare-box__label">Engineering</span>
+              <span>Structural validation, load calculations, PE stamp</span>
+            </div>
           </div>
         </div>
       </div>
@@ -474,11 +376,13 @@
 <!-- SECTION 7: TEAM BIOS -->
 <section class="section" id="team">
   <div class="container">
-    <div class="label" style="margin-bottom: 12px;">The Team</div>
-    <h2 style="margin-bottom: 8px;">Meet the team behind the drawings</h2>
-    <p style="font-size: 0.9375rem; color: var(--gray-600); max-width: 640px; margin-bottom: 48px;">MP Drafting is a Michigan-based production team with long-tenured leadership and a deep bench of drafting capacity. Below are selected team bios. Additional bios are published on a rolling basis.</p>
+    <div class="section-intro">
+      <div class="label">The Team</div>
+      <h2>Meet the team behind the drawings</h2>
+      <p class="section-intro__desc mw-640">MP Drafting is a Michigan-based production team with long-tenured leadership and a deep bench of drafting capacity. Below are selected team bios. Additional bios are published on a rolling basis.</p>
+    </div>
 
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+    <div class="grid grid--3">
 
       <div class="bio-card" data-bio="0">
         <div class="bio-card-photo">[ Photo ]</div>
@@ -569,28 +473,28 @@
       </div>
 
       <div class="bio-card bio-card--placeholder">
-        <div class="bio-card-photo" style="background: var(--gray-100);">[ Photo ]</div>
+        <div class="bio-card-photo">[ Photo ]</div>
         <div class="bio-card-info">
-          <span class="bio-card-name" style="color: var(--gray-500);">[Team Member Name]</span>
+          <span class="bio-card-name">[Team Member Name]</span>
         </div>
       </div>
 
       <div class="bio-card bio-card--placeholder">
-        <div class="bio-card-photo" style="background: var(--gray-100);">[ Photo ]</div>
+        <div class="bio-card-photo">[ Photo ]</div>
         <div class="bio-card-info">
-          <span class="bio-card-name" style="color: var(--gray-500);">[Team Member Name]</span>
+          <span class="bio-card-name">[Team Member Name]</span>
         </div>
       </div>
 
     </div>
 
-    <div style="margin-top: 40px; display: flex; gap: 16px; align-items: center; flex-wrap: wrap;">
+    <div class="cta-group mt-40">
       <a href="../request-quote/" class="btn btn--primary">Request a Quote</a>
       <a href="../sample-drawings/" class="btn btn--secondary">View Sample Drawings</a>
     </div>
-    <div style="margin-top: 10px; display: flex; gap: 40px; flex-wrap: wrap;">
-      <p style="font-size: 0.8125rem; color: var(--gray-500);">If your current provider is overloaded or unresponsive, we can help you stabilize production.</p>
-      <p style="font-size: 0.8125rem; color: var(--gray-500);">Confirm fit before you switch.</p>
+    <div class="cta-hints">
+      <p>If your current provider is overloaded or unresponsive, we can help you stabilize production.</p>
+      <p>Confirm fit before you switch.</p>
     </div>
   </div>
 </section>
@@ -600,11 +504,14 @@
 <!-- SECTION 8: FAQs -->
 <section class="section section--gray">
   <div class="container">
-    <div style="display: grid; grid-template-columns: 1fr 320px; gap: 64px; align-items: start;">
+    <div class="content-with-sidebar">
 
       <div>
-        <div class="label" style="margin-bottom: 8px;">About MP</div>
-        <h2 style="margin-bottom: 32px;">FAQs</h2>
+        <div class="faq-intro">
+          <div class="label">About MP</div>
+          <h2>FAQs</h2>
+          <p class="faq-intro__desc">Common questions before working with MP Drafting for the first time.</p>
+        </div>
 
         <div class="faq-list">
 
@@ -680,27 +587,27 @@
 
         </div>
 
-        <p style="margin-top: 28px; font-size: 0.875rem; color: var(--gray-500);"><a href="../faq/" style="color: var(--gray-700); text-decoration: underline; text-underline-offset: 3px;">Full FAQ →</a> &nbsp; Covers scope, LOD selection, revisions, and what slows projects down.</p>
+        <p class="faq-footer"><a class="faq-footer__link" href="../faq/">Full FAQ →</a> &nbsp; Covers scope, LOD selection, revisions, and what slows projects down.</p>
       </div>
 
       <!-- Sidebar -->
-      <div style="position: sticky; top: 88px; display: flex; flex-direction: column; gap: 16px;">
-        <div style="padding: 24px; border: 1px solid var(--gray-200); border-radius: 6px; background: white;">
-          <div class="label" style="margin-bottom: 12px;">Ready to Start?</div>
-          <p style="font-size: 0.9375rem; color: var(--gray-600); margin-bottom: 20px; max-width: none;">Submit a project and we'll scope it at the level that fits.</p>
-          <a href="../request-quote/" class="btn btn--primary" style="display: block; text-align: center;">Request a Quote</a>
+      <aside class="sidebar">
+        <div class="sidebar__card">
+          <div class="label">Ready to Start?</div>
+          <p>Submit a project and we'll scope it at the level that fits.</p>
+          <a href="../request-quote/" class="btn btn--primary">Request a Quote</a>
         </div>
-        <div style="padding: 24px; border: 1px solid var(--gray-200); border-radius: 6px; background: white;">
-          <div class="label" style="margin-bottom: 12px;">See the Work First</div>
-          <p style="font-size: 0.9375rem; color: var(--gray-600); margin-bottom: 20px; max-width: none;">Browse sample drawings before you commit.</p>
-          <a href="../sample-drawings/" class="btn btn--secondary" style="display: block; text-align: center;">View Sample Drawings</a>
+        <div class="sidebar__card">
+          <div class="label">See the Work First</div>
+          <p>Browse sample drawings before you commit.</p>
+          <a href="../sample-drawings/" class="btn btn--secondary">View Sample Drawings</a>
         </div>
-        <div style="padding: 24px; border: 1px solid var(--gray-200); border-radius: 6px; background: white;">
-          <div class="label" style="margin-bottom: 12px;">Have a Question?</div>
-          <p style="font-size: 0.9375rem; color: var(--gray-600); margin-bottom: 20px; max-width: none;">Reach out before you send a single drawing.</p>
-          <a href="../contact/" class="btn btn--secondary" style="display: block; text-align: center;">Contact Us</a>
+        <div class="sidebar__card">
+          <div class="label">Have a Question?</div>
+          <p>Reach out before you send a single drawing.</p>
+          <a href="../contact/" class="btn btn--secondary">Contact Us</a>
         </div>
-      </div>
+      </aside>
 
     </div>
   </div>
@@ -714,10 +621,6 @@
     <div class="btn-group">
       <a href="../request-quote/" class="btn btn--white">Request a Quote</a>
       <a href="../sample-drawings/" class="btn btn--ghost">View Sample Drawings</a>
-    </div>
-    <div style="margin-top: 12px; display: flex; gap: 40px; flex-wrap: wrap; justify-content: center;">
-      <p style="font-size: 0.8125rem; color: rgba(255,255,255,0.6);">Choose the level of detail that matches your project phase.</p>
-      <p style="font-size: 0.8125rem; color: rgba(255,255,255,0.6);">Look for fasteners, column lines, and clean dimensioning standards.</p>
     </div>
   </div>
 </section>

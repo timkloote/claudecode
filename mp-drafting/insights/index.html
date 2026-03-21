@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Insights — MP Drafting</title>
   <link rel="stylesheet" href="../css/wireframe.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/insights.css">
 </head>
 <body>
 
@@ -21,19 +23,19 @@
 </div>
 
 <!-- SECTION 1: HERO -->
-<div class="page-header">
+<header class="page-header">
   <div class="container">
     <div class="label">From the Field</div>
     <h1>Insights</h1>
     <p>Practical guidance for commercial glazing teams. Built around the problems that slow approvals down, create revision churn, and trigger field questions.</p>
-    <p style="margin-top: 12px;">Use Insights to benchmark drawing quality, tighten your review process, and make scope decisions that prevent rework.</p>
-    <div class="btn-group" style="margin-top: 28px;">
+    <p class="mt-10">Use Insights to benchmark drawing quality, tighten your review process, and make scope decisions that prevent rework.</p>
+    <div class="btn-group mt-md">
       <a href="../request-quote/" class="btn btn--white">Request a Quote</a>
       <a href="../sample-drawings/" class="btn btn--ghost">View Sample Drawings</a>
     </div>
-    <p style="margin-top: 12px; font-size: 0.8125rem; color: rgba(255,255,255,0.65);">Send drawings and scope notes. We will quote the right level of detail up front. &nbsp;·&nbsp; Proof you can review quickly by system type.</p>
+    <p class="page-note">Send drawings and scope notes. We will quote the right level of detail up front. &nbsp;·&nbsp; Proof you can review quickly by system type.</p>
   </div>
-</div>
+</header>
 
 <div class="divider"></div>
 
@@ -47,76 +49,76 @@
       <p class="mt-sm">Pick a topic to get straight to the guidance that matches your current problem.</p>
     </div>
 
-    <div class="grid grid--3" style="gap: 16px;">
+    <div class="grid grid--3 grid--gap-md">
 
-      <div style="padding: 20px 24px; background: var(--white); border: 1px solid var(--gray-200); border-radius: 6px;">
-        <div style="font-weight: 700; color: var(--gray-800); font-size: 0.9375rem; margin-bottom: 8px;">Drawing Quality and Detail Standards</div>
-        <p style="font-size: 0.875rem; color: var(--gray-500); max-width: none; margin: 0;">Use for "what good looks like" benchmarks, review guidance, and common shop drawing failure patterns.</p>
+      <div class="insight-card">
+        <div class="insight-card__title">Drawing Quality and Detail Standards</div>
+        <p>Use for "what good looks like" benchmarks, review guidance, and common shop drawing failure patterns.</p>
       </div>
 
-      <div style="padding: 20px 24px; background: var(--white); border: 1px solid var(--gray-200); border-radius: 6px;">
-        <div style="font-weight: 700; color: var(--gray-800); font-size: 0.9375rem; margin-bottom: 8px;">Submittals and Approval</div>
-        <p style="font-size: 0.875rem; color: var(--gray-500); max-width: none; margin: 0;">Use for approval readiness, rejection causes, liability boundaries tied to submittals, and what reviewers expect.</p>
+      <div class="insight-card">
+        <div class="insight-card__title">Submittals and Approval</div>
+        <p>Use for approval readiness, rejection causes, liability boundaries tied to submittals, and what reviewers expect.</p>
       </div>
 
-      <div style="padding: 20px 24px; background: var(--white); border: 1px solid var(--gray-200); border-radius: 6px;">
-        <div style="font-weight: 700; color: var(--gray-800); font-size: 0.9375rem; margin-bottom: 8px;">Revisions and Project Management</div>
-        <p style="font-size: 0.875rem; color: var(--gray-500); max-width: none; margin: 0;">Use for onboarding, revision cycles, deadline pressure, and PM workflows that keep drawings controlled.</p>
+      <div class="insight-card">
+        <div class="insight-card__title">Revisions and Project Management</div>
+        <p>Use for onboarding, revision cycles, deadline pressure, and PM workflows that keep drawings controlled.</p>
       </div>
 
-      <div style="padding: 20px 24px; background: var(--white); border: 1px solid var(--gray-200); border-radius: 6px;">
-        <div style="font-weight: 700; color: var(--gray-800); font-size: 0.9375rem; margin-bottom: 8px;">Engineering and Loads</div>
-        <p style="font-size: 0.875rem; color: var(--gray-500); max-width: none; margin: 0;">Use for wind load, structural validation, and when engineering is required. Never imply MP replaces a PE.</p>
+      <div class="insight-card">
+        <div class="insight-card__title">Engineering and Loads</div>
+        <p>Use for wind load, structural validation, and when engineering is required. Never imply MP replaces a PE.</p>
       </div>
 
-      <div style="padding: 20px 24px; background: var(--white); border: 1px solid var(--gray-200); border-radius: 6px;">
-        <div style="font-weight: 700; color: var(--gray-800); font-size: 0.9375rem; margin-bottom: 8px;">BIM and Coordination</div>
-        <p style="font-size: 0.875rem; color: var(--gray-500); max-width: none; margin: 0;">Use for BIM workflows, coordination models, and BIM gaps for curtain wall and facade work.</p>
+      <div class="insight-card">
+        <div class="insight-card__title">BIM and Coordination</div>
+        <p>Use for BIM workflows, coordination models, and BIM gaps for curtain wall and facade work.</p>
       </div>
 
-      <div style="padding: 20px 24px; background: var(--white); border: 1px solid var(--gray-200); border-radius: 6px;">
-        <div style="font-weight: 700; color: var(--gray-800); font-size: 0.9375rem; margin-bottom: 8px;">Outsourcing and Vendor Management</div>
-        <p style="font-size: 0.875rem; color: var(--gray-500); max-width: none; margin: 0;">Use for evaluating outsourced drafting, hiring, productivity, vendor expectations, and responsibility clarity.</p>
+      <div class="insight-card">
+        <div class="insight-card__title">Outsourcing and Vendor Management</div>
+        <p>Use for evaluating outsourced drafting, hiring, productivity, vendor expectations, and responsibility clarity.</p>
       </div>
 
-      <div style="padding: 20px 24px; background: var(--white); border: 1px solid var(--gray-200); border-radius: 6px;">
-        <div style="font-weight: 700; color: var(--gray-800); font-size: 0.9375rem; margin-bottom: 8px;">Pricing and Estimating</div>
-        <p style="font-size: 0.875rem; color: var(--gray-500); max-width: none; margin: 0;">Use for pricing drivers, estimating cost approaches, and scope decisions that affect fees and schedule.</p>
+      <div class="insight-card">
+        <div class="insight-card__title">Pricing and Estimating</div>
+        <p>Use for pricing drivers, estimating cost approaches, and scope decisions that affect fees and schedule.</p>
       </div>
 
-      <div style="padding: 20px 24px; background: var(--white); border: 1px solid var(--gray-200); border-radius: 6px;">
-        <div style="font-weight: 700; color: var(--gray-800); font-size: 0.9375rem; margin-bottom: 8px;">Tools and Checklists</div>
-        <p style="font-size: 0.875rem; color: var(--gray-500); max-width: none; margin: 0;">Use for checklists, cheat sheets, and practical reference tools.</p>
+      <div class="insight-card">
+        <div class="insight-card__title">Tools and Checklists</div>
+        <p>Use for checklists, cheat sheets, and practical reference tools.</p>
       </div>
 
-      <div style="padding: 20px 24px; background: var(--white); border: 1px solid var(--gray-200); border-radius: 6px;">
-        <div style="font-weight: 700; color: var(--gray-800); font-size: 0.9375rem; margin-bottom: 8px;">Field Details and Installation</div>
-        <p style="font-size: 0.875rem; color: var(--gray-500); max-width: none; margin: 0;">Use for detail-focused field clarity: sill, head, jamb, fit issues, and install-driven guidance.</p>
+      <div class="insight-card">
+        <div class="insight-card__title">Field Details and Installation</div>
+        <p>Use for detail-focused field clarity: sill, head, jamb, fit issues, and install-driven guidance.</p>
       </div>
 
-      <div style="padding: 20px 24px; background: var(--white); border: 1px solid var(--gray-200); border-radius: 6px;">
-        <div style="font-weight: 700; color: var(--gray-800); font-size: 0.9375rem; margin-bottom: 8px;">Case Studies and Showcases</div>
-        <p style="font-size: 0.875rem; color: var(--gray-500); max-width: none; margin: 0;">Use for project spotlights, case studies, and examples demonstrating systems and outcomes.</p>
+      <div class="insight-card">
+        <div class="insight-card__title">Case Studies and Showcases</div>
+        <p>Use for project spotlights, case studies, and examples demonstrating systems and outcomes.</p>
       </div>
 
-      <div style="padding: 20px 24px; background: var(--white); border: 1px solid var(--gray-200); border-radius: 6px;">
-        <div style="font-weight: 700; color: var(--gray-800); font-size: 0.9375rem; margin-bottom: 8px;">Trends and Innovation</div>
-        <p style="font-size: 0.875rem; color: var(--gray-500); max-width: none; margin: 0;">Use for industry trends, new products, and emerging tech relevant to glazing and facades.</p>
+      <div class="insight-card">
+        <div class="insight-card__title">Trends and Innovation</div>
+        <p>Use for industry trends, new products, and emerging tech relevant to glazing and facades.</p>
       </div>
 
-      <div style="padding: 20px 24px; background: var(--white); border: 1px solid var(--gray-200); border-radius: 6px;">
-        <div style="font-weight: 700; color: var(--gray-800); font-size: 0.9375rem; margin-bottom: 8px;">Culture and Misc</div>
-        <p style="font-size: 0.875rem; color: var(--gray-500); max-width: none; margin: 0;">Use for lighter posts. Do not feature prominently unless they support engagement goals.</p>
+      <div class="insight-card">
+        <div class="insight-card__title">Culture and Misc</div>
+        <p>Use for lighter posts. Do not feature prominently unless they support engagement goals.</p>
       </div>
 
     </div>
 
-    <div style="margin-top: 40px;">
+    <div class="mt-md">
       <div class="btn-group">
         <a href="#featured" class="btn btn--primary">View Featured Guides</a>
         <a href="#tools" class="btn btn--secondary">Tools and Checklists</a>
       </div>
-      <p style="margin-top: 10px; font-size: 0.8125rem; color: var(--gray-500);">Start with the highest-leverage reads. &nbsp;·&nbsp; Practical references PMs reuse.</p>
+      <p class="cta-note">Start with the highest-leverage reads. &nbsp;·&nbsp; Practical references PMs reuse.</p>
     </div>
 
   </div>
@@ -191,12 +193,12 @@
 
     </div>
 
-    <div style="margin-top: 40px;">
+    <div class="mt-md">
       <div class="btn-group">
         <a href="../sample-drawings/" class="btn btn--primary">View Sample Drawings</a>
         <a href="../our-process/" class="btn btn--secondary">Learn Our Process</a>
       </div>
-      <p style="margin-top: 10px; font-size: 0.8125rem; color: var(--gray-500);">Confirm the quality benchmark in real examples. &nbsp;·&nbsp; How intake and revisions stay controlled.</p>
+      <p class="cta-note">Confirm the quality benchmark in real examples. &nbsp;·&nbsp; How intake and revisions stay controlled.</p>
     </div>
 
   </div>
@@ -244,12 +246,12 @@
 
     </div>
 
-    <div style="margin-top: 40px;">
+    <div class="mt-md">
       <div class="btn-group">
         <a href="../request-quote/" class="btn btn--primary">Request a Quote</a>
         <a href="../sample-drawings/" class="btn btn--secondary">View Sample Drawings</a>
       </div>
-      <p style="margin-top: 10px; font-size: 0.8125rem; color: var(--gray-500);">If you have a live job, quoting is the fastest next step. &nbsp;·&nbsp; Use the checklist and verify visually.</p>
+      <p class="cta-note">If you have a live job, quoting is the fastest next step. &nbsp;·&nbsp; Use the checklist and verify visually.</p>
     </div>
 
   </div>
@@ -266,60 +268,60 @@
       <p>Pick the problem you are trying to solve.</p>
     </div>
 
-    <div class="grid grid--3" style="gap: 12px;">
+    <div class="grid grid--3 grid--gap-sm">
 
-      <a href="drawing-quality-and-detail-standards/" style="display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; border: 1px solid var(--gray-200); border-radius: 6px; background: var(--white); font-weight: 600; font-size: 0.9375rem; color: var(--gray-800); text-decoration: none; transition: border-color 0.15s;" onmouseover="this.style.borderColor='var(--gray-400)'" onmouseout="this.style.borderColor='var(--gray-200)'">
-        Drawing Quality and Detail Standards <span style="color: var(--gray-400);">→</span>
+      <a href="drawing-quality-and-detail-standards/" class="topic-nav-link">
+        Drawing Quality and Detail Standards <span class="topic-nav-link__arrow">→</span>
       </a>
 
-      <a href="submittals-and-approval/" style="display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; border: 1px solid var(--gray-200); border-radius: 6px; background: var(--white); font-weight: 600; font-size: 0.9375rem; color: var(--gray-800); text-decoration: none; transition: border-color 0.15s;" onmouseover="this.style.borderColor='var(--gray-400)'" onmouseout="this.style.borderColor='var(--gray-200)'">
-        Submittals and Approval <span style="color: var(--gray-400);">→</span>
+      <a href="submittals-and-approval/" class="topic-nav-link">
+        Submittals and Approval <span class="topic-nav-link__arrow">→</span>
       </a>
 
-      <a href="revisions-and-project-management/" style="display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; border: 1px solid var(--gray-200); border-radius: 6px; background: var(--white); font-weight: 600; font-size: 0.9375rem; color: var(--gray-800); text-decoration: none; transition: border-color 0.15s;" onmouseover="this.style.borderColor='var(--gray-400)'" onmouseout="this.style.borderColor='var(--gray-200)'">
-        Revisions and Project Management <span style="color: var(--gray-400);">→</span>
+      <a href="revisions-and-project-management/" class="topic-nav-link">
+        Revisions and Project Management <span class="topic-nav-link__arrow">→</span>
       </a>
 
-      <a href="engineering-and-loads/" style="display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; border: 1px solid var(--gray-200); border-radius: 6px; background: var(--white); font-weight: 600; font-size: 0.9375rem; color: var(--gray-800); text-decoration: none; transition: border-color 0.15s;" onmouseover="this.style.borderColor='var(--gray-400)'" onmouseout="this.style.borderColor='var(--gray-200)'">
-        Engineering and Loads <span style="color: var(--gray-400);">→</span>
+      <a href="engineering-and-loads/" class="topic-nav-link">
+        Engineering and Loads <span class="topic-nav-link__arrow">→</span>
       </a>
 
-      <a href="bim-and-coordination/" style="display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; border: 1px solid var(--gray-200); border-radius: 6px; background: var(--white); font-weight: 600; font-size: 0.9375rem; color: var(--gray-800); text-decoration: none; transition: border-color 0.15s;" onmouseover="this.style.borderColor='var(--gray-400)'" onmouseout="this.style.borderColor='var(--gray-200)'">
-        BIM and Coordination <span style="color: var(--gray-400);">→</span>
+      <a href="bim-and-coordination/" class="topic-nav-link">
+        BIM and Coordination <span class="topic-nav-link__arrow">→</span>
       </a>
 
-      <a href="outsourcing-and-vendor-management/" style="display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; border: 1px solid var(--gray-200); border-radius: 6px; background: var(--white); font-weight: 600; font-size: 0.9375rem; color: var(--gray-800); text-decoration: none; transition: border-color 0.15s;" onmouseover="this.style.borderColor='var(--gray-400)'" onmouseout="this.style.borderColor='var(--gray-200)'">
-        Outsourcing and Vendor Management <span style="color: var(--gray-400);">→</span>
+      <a href="outsourcing-and-vendor-management/" class="topic-nav-link">
+        Outsourcing and Vendor Management <span class="topic-nav-link__arrow">→</span>
       </a>
 
-      <a href="pricing-and-estimating/" style="display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; border: 1px solid var(--gray-200); border-radius: 6px; background: var(--white); font-weight: 600; font-size: 0.9375rem; color: var(--gray-800); text-decoration: none; transition: border-color 0.15s;" onmouseover="this.style.borderColor='var(--gray-400)'" onmouseout="this.style.borderColor='var(--gray-200)'">
-        Pricing and Estimating <span style="color: var(--gray-400);">→</span>
+      <a href="pricing-and-estimating/" class="topic-nav-link">
+        Pricing and Estimating <span class="topic-nav-link__arrow">→</span>
       </a>
 
-      <a href="tools-and-checklists/" style="display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; border: 1px solid var(--gray-200); border-radius: 6px; background: var(--white); font-weight: 600; font-size: 0.9375rem; color: var(--gray-800); text-decoration: none; transition: border-color 0.15s;" onmouseover="this.style.borderColor='var(--gray-400)'" onmouseout="this.style.borderColor='var(--gray-200)'">
-        Tools and Checklists <span style="color: var(--gray-400);">→</span>
+      <a href="tools-and-checklists/" class="topic-nav-link">
+        Tools and Checklists <span class="topic-nav-link__arrow">→</span>
       </a>
 
-      <a href="field-details-and-installation/" style="display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; border: 1px solid var(--gray-200); border-radius: 6px; background: var(--white); font-weight: 600; font-size: 0.9375rem; color: var(--gray-800); text-decoration: none; transition: border-color 0.15s;" onmouseover="this.style.borderColor='var(--gray-400)'" onmouseout="this.style.borderColor='var(--gray-200)'">
-        Field Details and Installation <span style="color: var(--gray-400);">→</span>
+      <a href="field-details-and-installation/" class="topic-nav-link">
+        Field Details and Installation <span class="topic-nav-link__arrow">→</span>
       </a>
 
-      <a href="case-studies-and-showcases/" style="display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; border: 1px solid var(--gray-200); border-radius: 6px; background: var(--white); font-weight: 600; font-size: 0.9375rem; color: var(--gray-800); text-decoration: none; transition: border-color 0.15s;" onmouseover="this.style.borderColor='var(--gray-400)'" onmouseout="this.style.borderColor='var(--gray-200)'">
-        Case Studies and Showcases <span style="color: var(--gray-400);">→</span>
+      <a href="case-studies-and-showcases/" class="topic-nav-link">
+        Case Studies and Showcases <span class="topic-nav-link__arrow">→</span>
       </a>
 
-      <a href="trends-and-innovation/" style="display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; border: 1px solid var(--gray-200); border-radius: 6px; background: var(--white); font-weight: 600; font-size: 0.9375rem; color: var(--gray-800); text-decoration: none; transition: border-color 0.15s;" onmouseover="this.style.borderColor='var(--gray-400)'" onmouseout="this.style.borderColor='var(--gray-200)'">
-        Trends and Innovation <span style="color: var(--gray-400);">→</span>
+      <a href="trends-and-innovation/" class="topic-nav-link">
+        Trends and Innovation <span class="topic-nav-link__arrow">→</span>
       </a>
 
     </div>
 
-    <div style="margin-top: 40px;">
+    <div class="mt-md">
       <div class="btn-group">
         <a href="#latest" class="btn btn--primary">View Latest Articles</a>
         <a href="../faq/" class="btn btn--secondary">FAQ</a>
       </div>
-      <p style="margin-top: 10px; font-size: 0.8125rem; color: var(--gray-500);">Newest content first. &nbsp;·&nbsp; First-job questions answered clearly.</p>
+      <p class="cta-note">Newest content first. &nbsp;·&nbsp; First-job questions answered clearly.</p>
     </div>
 
   </div>
@@ -394,12 +396,12 @@
 
     </div>
 
-    <div style="margin-top: 40px;">
+    <div class="mt-md">
       <div class="btn-group">
         <a href="../request-quote/" class="btn btn--primary">Request a Quote</a>
         <a href="../shop-drawing-services/" class="btn btn--secondary">Shop Drawing Services</a>
       </div>
-      <p style="margin-top: 10px; font-size: 0.8125rem; color: var(--gray-500);">If a deadline is driving this, include it at intake. &nbsp;·&nbsp; Services mapped to system types.</p>
+      <p class="cta-note">If a deadline is driving this, include it at intake. &nbsp;·&nbsp; Services mapped to system types.</p>
     </div>
 
   </div>
@@ -416,14 +418,14 @@
       <p>If you are mid-job, you do not have time to dig. Use search and topic filters to get to the answer that matches what is happening on your project right now.</p>
     </div>
 
-    <div style="display: flex; gap: 16px; flex-wrap: wrap; align-items: flex-end; margin-bottom: 40px; padding: 20px 24px; background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: 6px;">
-      <div style="flex: 1; min-width: 220px;">
-        <label for="insights-search" style="display: block; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--gray-500); margin-bottom: 6px;">Search</label>
-        <input type="search" id="insights-search" placeholder="System type, detail, submittal…" style="width: 100%; padding: 9px 12px; border: 1px solid var(--gray-300); border-radius: 5px; font-size: 0.9375rem; color: var(--gray-800); background: var(--white); outline: none;">
+    <div class="search-bar">
+      <div class="search-bar__field">
+        <label for="insights-search" class="search-bar__label">Search</label>
+        <input type="search" id="insights-search" placeholder="System type, detail, submittal…" class="search-bar__input">
       </div>
-      <div style="min-width: 220px;">
-        <label for="insights-filter" style="display: block; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--gray-500); margin-bottom: 6px;">Filter by topic</label>
-        <select id="insights-filter" style="width: 100%; padding: 9px 12px; border: 1px solid var(--gray-300); border-radius: 5px; font-size: 0.9375rem; color: var(--gray-800); background: var(--white); cursor: pointer; outline: none;">
+      <div class="search-bar__field">
+        <label for="insights-filter" class="search-bar__label">Filter by topic</label>
+        <select id="insights-filter" class="search-bar__select">
           <option value="">All topics</option>
           <option value="drawing-quality-and-detail-standards">Drawing Quality and Detail Standards</option>
           <option value="submittals-and-approval">Submittals and Approval</option>
@@ -439,9 +441,9 @@
           <option value="culture-and-misc">Culture and Misc</option>
         </select>
       </div>
-      <div style="min-width: 160px;">
-        <label for="insights-sort" style="display: block; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--gray-500); margin-bottom: 6px;">Sort</label>
-        <select id="insights-sort" style="width: 100%; padding: 9px 12px; border: 1px solid var(--gray-300); border-radius: 5px; font-size: 0.9375rem; color: var(--gray-800); background: var(--white); cursor: pointer; outline: none;">
+      <div class="search-bar__field search-bar__field--narrow">
+        <label for="insights-sort" class="search-bar__label">Sort</label>
+        <select id="insights-sort" class="search-bar__select">
           <option value="newest">Newest first</option>
           <option value="oldest">Oldest first</option>
           <option value="az">A–Z</option>
@@ -450,15 +452,15 @@
       </div>
     </div>
 
-    <p id="insights-no-results" style="display: none; color: var(--gray-500); font-size: 0.9375rem; padding: 32px 0;">No articles matched your search. Try a different keyword or reset the filters.</p>
+    <p id="insights-no-results" class="search-no-results" style="display: none;">No articles matched your search. Try a different keyword or reset the filters.</p>
 
     <!-- Drawing Quality and Detail Standards -->
-    <div data-category="drawing-quality-and-detail-standards" style="margin-bottom: 48px;">
-      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 2px solid var(--gray-200);">
-        <h3 style="font-size: 1.0625rem;">Drawing Quality and Detail Standards</h3>
-        <a href="drawing-quality-and-detail-standards/" style="font-size: 0.8125rem; color: var(--gray-500); text-decoration: underline; text-underline-offset: 3px; margin-left: auto; white-space: nowrap;">View all →</a>
+    <div data-category="drawing-quality-and-detail-standards" class="article-section">
+      <div class="article-section__header">
+        <h3 class="article-section__title">Drawing Quality and Detail Standards</h3>
+        <a href="drawing-quality-and-detail-standards/" class="article-section__viewall">View all →</a>
       </div>
-      <div class="grid grid--3" style="gap: 16px;">
+      <div class="grid grid--3 grid--gap-md">
         <a href="drawing-quality-and-detail-standards/architectural-failures-what-not-to-do/" class="insights-card">
           <div class="insights-card-body">
             <div class="insights-card-tag">Article</div>
@@ -526,12 +528,12 @@
     </div>
 
     <!-- Submittals and Approval -->
-    <div data-category="submittals-and-approval" style="margin-bottom: 48px;">
-      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 2px solid var(--gray-200);">
-        <h3 style="font-size: 1.0625rem;">Submittals and Approval</h3>
-        <a href="submittals-and-approval/" style="font-size: 0.8125rem; color: var(--gray-500); text-decoration: underline; text-underline-offset: 3px; margin-left: auto; white-space: nowrap;">View all →</a>
+    <div data-category="submittals-and-approval" class="article-section">
+      <div class="article-section__header">
+        <h3 class="article-section__title">Submittals and Approval</h3>
+        <a href="submittals-and-approval/" class="article-section__viewall">View all →</a>
       </div>
-      <div class="grid grid--3" style="gap: 16px;">
+      <div class="grid grid--3 grid--gap-md">
         <a href="submittals-and-approval/drafting-service-files-important-liability-information-for-shop-drawings/" class="insights-card">
           <div class="insights-card-body">
             <div class="insights-card-tag">Article</div>
@@ -550,12 +552,12 @@
     </div>
 
     <!-- Revisions and Project Management -->
-    <div data-category="revisions-and-project-management" style="margin-bottom: 48px;">
-      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 2px solid var(--gray-200);">
-        <h3 style="font-size: 1.0625rem;">Revisions and Project Management</h3>
-        <a href="revisions-and-project-management/" style="font-size: 0.8125rem; color: var(--gray-500); text-decoration: underline; text-underline-offset: 3px; margin-left: auto; white-space: nowrap;">View all →</a>
+    <div data-category="revisions-and-project-management" class="article-section">
+      <div class="article-section__header">
+        <h3 class="article-section__title">Revisions and Project Management</h3>
+        <a href="revisions-and-project-management/" class="article-section__viewall">View all →</a>
       </div>
-      <div class="grid grid--3" style="gap: 16px;">
+      <div class="grid grid--3 grid--gap-md">
         <a href="revisions-and-project-management/drafting-service-files-project-managers-save-the-day/" class="insights-card">
           <div class="insights-card-body">
             <div class="insights-card-tag">Article</div>
@@ -595,12 +597,12 @@
     </div>
 
     <!-- Engineering and Loads -->
-    <div data-category="engineering-and-loads" style="margin-bottom: 48px;">
-      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 2px solid var(--gray-200);">
-        <h3 style="font-size: 1.0625rem;">Engineering and Loads</h3>
-        <a href="engineering-and-loads/" style="font-size: 0.8125rem; color: var(--gray-500); text-decoration: underline; text-underline-offset: 3px; margin-left: auto; white-space: nowrap;">View all →</a>
+    <div data-category="engineering-and-loads" class="article-section">
+      <div class="article-section__header">
+        <h3 class="article-section__title">Engineering and Loads</h3>
+        <a href="engineering-and-loads/" class="article-section__viewall">View all →</a>
       </div>
-      <div class="grid grid--3" style="gap: 16px;">
+      <div class="grid grid--3 grid--gap-md">
         <a href="engineering-and-loads/drafting-service-files-dont-skip-engineering/" class="insights-card">
           <div class="insights-card-body">
             <div class="insights-card-tag">Engineering</div>
@@ -626,12 +628,12 @@
     </div>
 
     <!-- BIM and Coordination -->
-    <div data-category="bim-and-coordination" style="margin-bottom: 48px;">
-      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 2px solid var(--gray-200);">
-        <h3 style="font-size: 1.0625rem;">BIM and Coordination</h3>
-        <a href="bim-and-coordination/" style="font-size: 0.8125rem; color: var(--gray-500); text-decoration: underline; text-underline-offset: 3px; margin-left: auto; white-space: nowrap;">View all →</a>
+    <div data-category="bim-and-coordination" class="article-section">
+      <div class="article-section__header">
+        <h3 class="article-section__title">BIM and Coordination</h3>
+        <a href="bim-and-coordination/" class="article-section__viewall">View all →</a>
       </div>
-      <div class="grid grid--3" style="gap: 16px;">
+      <div class="grid grid--3 grid--gap-md">
         <a href="bim-and-coordination/is-your-bim-missing-something/" class="insights-card">
           <div class="insights-card-body">
             <div class="insights-card-tag">BIM</div>
@@ -657,12 +659,12 @@
     </div>
 
     <!-- Outsourcing and Vendor Management -->
-    <div data-category="outsourcing-and-vendor-management" style="margin-bottom: 48px;">
-      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 2px solid var(--gray-200);">
-        <h3 style="font-size: 1.0625rem;">Outsourcing and Vendor Management</h3>
-        <a href="outsourcing-and-vendor-management/" style="font-size: 0.8125rem; color: var(--gray-500); text-decoration: underline; text-underline-offset: 3px; margin-left: auto; white-space: nowrap;">View all →</a>
+    <div data-category="outsourcing-and-vendor-management" class="article-section">
+      <div class="article-section__header">
+        <h3 class="article-section__title">Outsourcing and Vendor Management</h3>
+        <a href="outsourcing-and-vendor-management/" class="article-section__viewall">View all →</a>
       </div>
-      <div class="grid grid--3" style="gap: 16px;">
+      <div class="grid grid--3 grid--gap-md">
         <a href="outsourcing-and-vendor-management/hiring-the-right-draftsman/" class="insights-card">
           <div class="insights-card-body">
             <div class="insights-card-tag">Article</div>
@@ -695,12 +697,12 @@
     </div>
 
     <!-- Pricing and Estimating -->
-    <div data-category="pricing-and-estimating" style="margin-bottom: 48px;">
-      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 2px solid var(--gray-200);">
-        <h3 style="font-size: 1.0625rem;">Pricing and Estimating</h3>
-        <a href="pricing-and-estimating/" style="font-size: 0.8125rem; color: var(--gray-500); text-decoration: underline; text-underline-offset: 3px; margin-left: auto; white-space: nowrap;">View all →</a>
+    <div data-category="pricing-and-estimating" class="article-section">
+      <div class="article-section__header">
+        <h3 class="article-section__title">Pricing and Estimating</h3>
+        <a href="pricing-and-estimating/" class="article-section__viewall">View all →</a>
       </div>
-      <div class="grid grid--3" style="gap: 16px;">
+      <div class="grid grid--3 grid--gap-md">
         <a href="pricing-and-estimating/drafting-service-files-a-creative-approach-to-estimating-project-costs/" class="insights-card">
           <div class="insights-card-body">
             <div class="insights-card-tag">Pricing</div>
@@ -719,12 +721,12 @@
     </div>
 
     <!-- Tools and Checklists -->
-    <div data-category="tools-and-checklists" style="margin-bottom: 48px;">
-      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 2px solid var(--gray-200);">
-        <h3 style="font-size: 1.0625rem;">Tools and Checklists</h3>
-        <a href="tools-and-checklists/" style="font-size: 0.8125rem; color: var(--gray-500); text-decoration: underline; text-underline-offset: 3px; margin-left: auto; white-space: nowrap;">View all →</a>
+    <div data-category="tools-and-checklists" class="article-section">
+      <div class="article-section__header">
+        <h3 class="article-section__title">Tools and Checklists</h3>
+        <a href="tools-and-checklists/" class="article-section__viewall">View all →</a>
       </div>
-      <div class="grid grid--3" style="gap: 16px;">
+      <div class="grid grid--3 grid--gap-md">
         <a href="tools-and-checklists/drafting-service-files-two-new-free-tools-for-architectural-glazing/" class="insights-card">
           <div class="insights-card-body">
             <div class="insights-card-tag">Tool</div>
@@ -757,12 +759,12 @@
     </div>
 
     <!-- Field Details and Installation -->
-    <div data-category="field-details-and-installation" style="margin-bottom: 48px;">
-      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 2px solid var(--gray-200);">
-        <h3 style="font-size: 1.0625rem;">Field Details and Installation</h3>
-        <a href="field-details-and-installation/" style="font-size: 0.8125rem; color: var(--gray-500); text-decoration: underline; text-underline-offset: 3px; margin-left: auto; white-space: nowrap;">View all →</a>
+    <div data-category="field-details-and-installation" class="article-section">
+      <div class="article-section__header">
+        <h3 class="article-section__title">Field Details and Installation</h3>
+        <a href="field-details-and-installation/" class="article-section__viewall">View all →</a>
       </div>
-      <div class="grid grid--3" style="gap: 16px;">
+      <div class="grid grid--3 grid--gap-md">
         <a href="field-details-and-installation/drafting-service-files-how-to-produce-shop-drawings-for-historical-buildings/" class="insights-card">
           <div class="insights-card-body">
             <div class="insights-card-tag">Detail Library</div>
@@ -788,12 +790,12 @@
     </div>
 
     <!-- Case Studies and Showcases -->
-    <div data-category="case-studies-and-showcases" style="margin-bottom: 48px;">
-      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 2px solid var(--gray-200);">
-        <h3 style="font-size: 1.0625rem;">Case Studies and Showcases</h3>
-        <a href="case-studies-and-showcases/" style="font-size: 0.8125rem; color: var(--gray-500); text-decoration: underline; text-underline-offset: 3px; margin-left: auto; white-space: nowrap;">View all →</a>
+    <div data-category="case-studies-and-showcases" class="article-section">
+      <div class="article-section__header">
+        <h3 class="article-section__title">Case Studies and Showcases</h3>
+        <a href="case-studies-and-showcases/" class="article-section__viewall">View all →</a>
       </div>
-      <div class="grid grid--3" style="gap: 16px;">
+      <div class="grid grid--3 grid--gap-md">
         <a href="case-studies-and-showcases/drafting-service-files-learning-from-airport-glazing-systems/" class="insights-card">
           <div class="insights-card-body">
             <div class="insights-card-tag">Article</div>
@@ -847,12 +849,12 @@
     </div>
 
     <!-- Trends and Innovation -->
-    <div data-category="trends-and-innovation" style="margin-bottom: 48px;">
-      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 2px solid var(--gray-200);">
-        <h3 style="font-size: 1.0625rem;">Trends and Innovation</h3>
-        <a href="trends-and-innovation/" style="font-size: 0.8125rem; color: var(--gray-500); text-decoration: underline; text-underline-offset: 3px; margin-left: auto; white-space: nowrap;">View all →</a>
+    <div data-category="trends-and-innovation" class="article-section">
+      <div class="article-section__header">
+        <h3 class="article-section__title">Trends and Innovation</h3>
+        <a href="trends-and-innovation/" class="article-section__viewall">View all →</a>
       </div>
-      <div class="grid grid--3" style="gap: 16px;">
+      <div class="grid grid--3 grid--gap-md">
         <a href="trends-and-innovation/transparent-wood/" class="insights-card">
           <div class="insights-card-body">
             <div class="insights-card-tag">Article</div>
@@ -899,11 +901,11 @@
     </div>
 
     <!-- Culture and Misc -->
-    <div data-category="culture-and-misc" style="margin-bottom: 8px;">
-      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 2px solid var(--gray-200);">
-        <h3 style="font-size: 1.0625rem;">Culture and Misc</h3>
+    <div data-category="culture-and-misc" class="article-section article-section--last">
+      <div class="article-section__header">
+        <h3 class="article-section__title">Culture and Misc</h3>
       </div>
-      <div class="grid grid--3" style="gap: 16px;">
+      <div class="grid grid--3 grid--gap-md">
         <a href="culture-and-misc/get-off-your-glass-shop-drawings-and-stand-up-desks/" class="insights-card">
           <div class="insights-card-body">
             <div class="insights-card-tag">Article</div>
@@ -914,12 +916,12 @@
       </div>
     </div>
 
-    <div style="margin-top: 48px;">
+    <div class="mt-32">
       <div class="btn-group">
         <a href="../request-quote/" class="btn btn--primary">Request a Quote</a>
         <a href="../sample-drawings/" class="btn btn--secondary">View Sample Drawings</a>
       </div>
-      <p style="margin-top: 10px; font-size: 0.8125rem; color: var(--gray-500);">If a deadline is driving this, include it at intake. &nbsp;·&nbsp; Proof you can review quickly.</p>
+      <p class="cta-note">If a deadline is driving this, include it at intake. &nbsp;·&nbsp; Proof you can review quickly.</p>
     </div>
 
   </div>
@@ -981,18 +983,18 @@
           <span class="faq-icon">+</span>
         </button>
         <div class="faq-answer">
-          Start with <a href="drawing-quality-and-detail-standards/what-great-shop-drawings-actually-look-like-a-walkthrough-from-mp-drafting/" style="color: var(--gray-700); text-decoration: underline; text-underline-offset: 3px;">What Great Shop Drawings Actually Look Like</a> and the <a href="tools-and-checklists/drafting-service-files-use-this-comprehensive-checklist-to-review-glass-and-glazing-shop-drawings/" style="color: var(--gray-700); text-decoration: underline; text-underline-offset: 3px;">shop drawing review checklist</a>, then validate in Sample Drawings.
+          Start with <a href="drawing-quality-and-detail-standards/what-great-shop-drawings-actually-look-like-a-walkthrough-from-mp-drafting/" class="faq-link">What Great Shop Drawings Actually Look Like</a> and the <a href="tools-and-checklists/drafting-service-files-use-this-comprehensive-checklist-to-review-glass-and-glazing-shop-drawings/" class="faq-link">shop drawing review checklist</a>, then validate in Sample Drawings.
         </div>
       </div>
 
     </div>
 
-    <div style="margin-top: 40px;">
+    <div class="mt-md">
       <div class="btn-group">
         <a href="../sample-drawings/" class="btn btn--primary">View Sample Drawings</a>
         <a href="../request-quote/" class="btn btn--secondary">Request a Quote</a>
       </div>
-      <p style="margin-top: 10px; font-size: 0.8125rem; color: var(--gray-500);">Verify fasteners, dimensioning, and revision cleanliness. &nbsp;·&nbsp; If you have a live job, quoting is the fastest next step.</p>
+      <p class="cta-note">Verify fasteners, dimensioning, and revision cleanliness. &nbsp;·&nbsp; If you have a live job, quoting is the fastest next step.</p>
     </div>
 
   </div>
@@ -1009,7 +1011,7 @@
       <a href="../request-quote/" class="btn btn--white">Request a Quote</a>
       <a href="../our-process/" class="btn btn--ghost">Learn Our Process</a>
     </div>
-    <p style="margin-top: 12px; font-size: 0.8125rem; color: rgba(255,255,255,0.65);">Send drawings and scope. Include target submittal date and expected redline rounds. &nbsp;·&nbsp; How MP keeps revision cycles predictable.</p>
+    <p class="page-note">Send drawings and scope. Include target submittal date and expected redline rounds. &nbsp;·&nbsp; How MP keeps revision cycles predictable.</p>
   </div>
 </section>
 

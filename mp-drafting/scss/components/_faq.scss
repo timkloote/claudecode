@@ -1,0 +1,68 @@
+// ── FAQ intro: label + h2 + intro text block ──
+.faq-intro {
+  .label { margin-bottom: 8px; }
+  h2    { margin-bottom: 8px; }
+
+  &__desc {
+    font-size: 0.9375rem;
+    color: var(--gray-600);
+    margin-bottom: 32px;
+  }
+}
+
+// ── FAQ footer: "view complete FAQ" note with link ──
+.faq-footer {
+  margin-top: 28px;
+  font-size: 0.875rem;
+  color: var(--gray-500);
+
+  &__link {
+    color: var(--gray-700);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+// ── FAQ sections (full FAQ page) ──
+.faq-section {
+  margin-bottom: 56px;
+
+  &--bordered {
+    padding-top: 40px;
+    border-top: 1px solid var(--gray-200);
+  }
+
+  h2 {
+    margin-bottom: 12px;
+    font-size: 1.375rem;
+  }
+
+  &__intro {
+    font-size: 0.9375rem;
+    color: var(--gray-600);
+    margin-bottom: 28px;
+  }
+
+  &__cta {
+    margin-top: 24px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+}
+
+// ── Section intro: label + h2 + description (form sections, etc.) ──
+.section-intro {
+  margin-bottom: 32px;
+
+  .label { margin-bottom: 8px; }
+  h2    { margin-bottom: 8px; }
+
+  &__desc {
+    font-size: 0.9375rem;
+    color: var(--gray-600);
+    max-width: none;
+    margin-bottom: 0;
+  }
+}

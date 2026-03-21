@@ -1,0 +1,39 @@
+// ── Contact table: label/value grid ──
+.contact-table {
+  display: grid;
+  grid-template-columns: 148px 1fr;
+  border: 1px solid var(--gray-200);
+  border-radius: 6px;
+  overflow: hidden;
+
+  &__label {
+    background: var(--gray-50);
+    color: var(--gray-500);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--gray-200);
+    display: flex;
+    align-items: center;
+
+    &:last-of-type { border-bottom: none; }
+  }
+
+  &__value {
+    color: var(--gray-800);
+    font-size: 0.9375rem;
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--gray-200);
+    display: flex;
+    align-items: center;
+
+    &:last-of-type { border-bottom: none; }
+  }
+}
+
+// ── Select input — cursor pointer ──
+select.form-input {
+  cursor: pointer;
+}

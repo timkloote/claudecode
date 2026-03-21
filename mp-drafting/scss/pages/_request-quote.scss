@@ -1,0 +1,11 @@
+// ── Request a Quote — page-specific styles ──
+
+// Hide step 2 until JS reveals it
+#form-step-2 {
+  display: none;
+}
+
+// Short textarea (additional notes field)
+.form-textarea--short {
+  min-height: 80px;
+}

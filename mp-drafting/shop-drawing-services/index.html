@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shop Drawing Services — MP Drafting</title>
   <link rel="stylesheet" href="../css/wireframe.css">
+  <link rel="stylesheet" href="../css/global.css">
 </head>
 <body>
 
@@ -21,23 +22,23 @@
 </div>
 
 <!-- SECTION 1: HERO -->
-<div class="page-header">
+<header class="page-header">
   <div class="container">
     <div class="label">Commercial Glazing Drafting</div>
     <h1>Shop Drawing Services for Commercial Glazing Projects</h1>
     <p>MP Drafting provides precision planning through coordinated shop drawings that crews can install from and that hold up in review. We focus on reducing field questions, avoiding preventable rework, and keeping submittals moving. Planning is primary. Engineering remains structural validation when required, and we do not position drafting as a PE substitute.</p>
-    <div style="margin-top: 24px; display: flex; flex-direction: column; gap: 8px;">
-      <div style="display: flex; gap: 10px; align-items: center; font-size: 0.9375rem; color: rgba(255,255,255,0.85);"><span style="opacity: 0.6;">→</span> Coordinated, field-ready drawing sets for glazing scopes and project phases</div>
-      <div style="display: flex; gap: 10px; align-items: center; font-size: 0.9375rem; color: rgba(255,255,255,0.85);"><span style="opacity: 0.6;">→</span> Clear level-of-detail options to reduce first-job friction without lowering standards</div>
-      <div style="display: flex; gap: 10px; align-items: center; font-size: 0.9375rem; color: rgba(255,255,255,0.85);"><span style="opacity: 0.6;">→</span> One clear path to quote, kickoff, and delivery with fewer surprises</div>
-    </div>
-    <div class="btn-group" style="margin-top: 28px;">
+    <ul class="page-header__bullets">
+      <li class="page-header__bullet"><span class="page-header__bullet-arrow" aria-hidden="true">→</span> Coordinated, field-ready drawing sets for glazing scopes and project phases</li>
+      <li class="page-header__bullet"><span class="page-header__bullet-arrow" aria-hidden="true">→</span> Clear level-of-detail options to reduce first-job friction without lowering standards</li>
+      <li class="page-header__bullet"><span class="page-header__bullet-arrow" aria-hidden="true">→</span> One clear path to quote, kickoff, and delivery with fewer surprises</li>
+    </ul>
+    <div class="btn-group mt-md">
       <a href="../request-quote/" class="btn btn--white">Request a Quote</a>
       <a href="../sample-drawings/" class="btn btn--ghost">View Sample Drawings</a>
     </div>
-    <p style="margin-top: 12px; font-size: 0.8125rem; opacity: 0.8;">Attach drawings and scope notes. Select your level of detail.</p>
+    <p class="page-note">Attach drawings and scope notes. Select your level of detail.</p>
   </div>
-</div>
+</header>
 
 <div class="divider"></div>
 
@@ -48,9 +49,9 @@
       <div>
         <h2>Shop drawings are not an afterthought</h2>
         <p class="mt-sm">Some teams assume engineering comes first and shops come later. In reality, shop drawings coordinate reality: layout clarity for installers, fastener intent tied to conditions, and reconciliation across inconsistent architectural information. Engineering validates structural performance. When both are needed, they align best when drafting is treated as a professional planning discipline, not a commodity.</p>
-        <div style="margin-top: 28px;">
+        <div class="mt-md">
           <a href="../insights/the-detailed-difference/" class="btn btn--secondary">Read "The Detailed Difference"</a>
-          <p style="margin-top: 8px; font-size: 0.8125rem; color: var(--gray-500);">A practical explanation of what detail changes downstream.</p>
+          <p class="cta-note">A practical explanation of what detail changes downstream.</p>
         </div>
       </div>
       <div>
@@ -91,17 +92,17 @@
       <div>
         <h2>What customers ask for before they switch drafters or send overflow</h2>
         <p class="mt-sm">These are real inbound requests we see repeatedly. They are almost never asking for "pretty drawings." They are asking for certainty, speed where it matters, and a clean path to approval.</p>
-        <div style="margin-top: 28px;">
+        <div class="mt-md">
           <a href="../request-quote/" class="btn btn--primary">Request a Quote</a>
-          <p style="margin-top: 8px; font-size: 0.8125rem; color: var(--gray-500);">Tell us your submittal date and what is driving it.</p>
+          <p class="cta-note">Tell us your submittal date and what is driving it.</p>
         </div>
       </div>
-      <div style="display: flex; flex-direction: column; gap: 10px;">
-        <div style="padding: 14px 16px; background: white; border-left: 3px solid var(--gray-300); border-radius: 0 4px 4px 0; font-size: 0.9375rem; color: var(--gray-600); font-style: italic;">"I need a price for shop drawings and engineering for our project."</div>
-        <div style="padding: 14px 16px; background: white; border-left: 3px solid var(--gray-300); border-radius: 0 4px 4px 0; font-size: 0.9375rem; color: var(--gray-600); font-style: italic;">"Let me know when these might be ready to submit for approval."</div>
-        <div style="padding: 14px 16px; background: white; border-left: 3px solid var(--gray-300); border-radius: 0 4px 4px 0; font-size: 0.9375rem; color: var(--gray-600); font-style: italic;">"We would like to have the revisions by tomorrow."</div>
-        <div style="padding: 14px 16px; background: white; border-left: 3px solid var(--gray-300); border-radius: 0 4px 4px 0; font-size: 0.9375rem; color: var(--gray-600); font-style: italic;">"Also, would this proposal include changes for the A/E redlines?"</div>
-        <div style="padding: 14px 16px; background: white; border-left: 3px solid var(--gray-300); border-radius: 0 4px 4px 0; font-size: 0.9375rem; color: var(--gray-600); font-style: italic;">"Once we have the first round of shop drawings, I'll use those for field verification and then provide final dimensions."</div>
+      <div class="pullquote-stack">
+        <div class="pullquote pullquote--white">"I need a price for shop drawings and engineering for our project."</div>
+        <div class="pullquote pullquote--white">"Let me know when these might be ready to submit for approval."</div>
+        <div class="pullquote pullquote--white">"We would like to have the revisions by tomorrow."</div>
+        <div class="pullquote pullquote--white">"Also, would this proposal include changes for the A/E redlines?"</div>
+        <div class="pullquote pullquote--white">"Once we have the first round of shop drawings, I'll use those for field verification and then provide final dimensions."</div>
       </div>
     </div>
   </div>
@@ -119,7 +120,7 @@
 
     <div class="grid grid--3">
 
-      <a href="curtain-wall/" class="service-card" style="text-decoration:none;">
+      <a href="curtain-wall/" class="service-card">
         <div class="service-card-img">[ Curtain Wall Detail Preview ]</div>
         <div class="service-card-body">
           <h3>Curtain Wall</h3>
@@ -128,7 +129,7 @@
         </div>
       </a>
 
-      <a href="storefront/" class="service-card" style="text-decoration:none;">
+      <a href="storefront/" class="service-card">
         <div class="service-card-img">[ Storefront System Preview ]</div>
         <div class="service-card-body">
           <h3>Storefront</h3>
@@ -137,7 +138,7 @@
         </div>
       </a>
 
-      <a href="all-glass-entrances-partitions/" class="service-card" style="text-decoration:none;">
+      <a href="all-glass-entrances-partitions/" class="service-card">
         <div class="service-card-img">[ All-Glass Entrance Preview ]</div>
         <div class="service-card-body">
           <h3>All-Glass Entrances &amp; Partitions</h3>
@@ -146,7 +147,7 @@
         </div>
       </a>
 
-      <a href="handrail-guardrail/" class="service-card" style="text-decoration:none;">
+      <a href="handrail-guardrail/" class="service-card">
         <div class="service-card-img">[ Handrail / Guardrail Preview ]</div>
         <div class="service-card-body">
           <h3>Handrail &amp; Guardrail</h3>
@@ -155,7 +156,7 @@
         </div>
       </a>
 
-      <a href="metal-panel-cladding/" class="service-card" style="text-decoration:none;">
+      <a href="metal-panel-cladding/" class="service-card">
         <div class="service-card-img">[ Metal Panel System Preview ]</div>
         <div class="service-card-body">
           <h3>Metal Panel &amp; Cladding</h3>
@@ -164,7 +165,7 @@
         </div>
       </a>
 
-      <a href="sunshades/" class="service-card" style="text-decoration:none;">
+      <a href="sunshades/" class="service-card">
         <div class="service-card-img">[ Sunshade System Preview ]</div>
         <div class="service-card-body">
           <h3>Sunshades</h3>
@@ -173,7 +174,7 @@
         </div>
       </a>
 
-      <a href="custom-fabrication-detailing/" class="service-card" style="text-decoration:none;">
+      <a href="custom-fabrication-detailing/" class="service-card">
         <div class="service-card-img">[ Custom Fabrication Preview ]</div>
         <div class="service-card-body">
           <h3>Custom Fabrication Detailing</h3>
@@ -182,7 +183,7 @@
         </div>
       </a>
 
-      <a href="design-build-drafting/" class="service-card" style="text-decoration:none;">
+      <a href="design-build-drafting/" class="service-card">
         <div class="service-card-img">[ Advanced Detailing Collaboration Preview ]</div>
         <div class="service-card-body">
           <h3>Advanced Detailing Drafting</h3>
@@ -191,7 +192,7 @@
         </div>
       </a>
 
-      <a href="bim-3d-services/" class="service-card" style="text-decoration:none;">
+      <a href="bim-3d-services/" class="service-card">
         <div class="service-card-img">[ BIM / 3D Model Preview ]</div>
         <div class="service-card-body">
           <h3>BIM &amp; 3D Services</h3>
@@ -200,7 +201,7 @@
         </div>
       </a>
 
-      <a href="engineering-technical-support/" class="service-card" style="text-decoration:none;">
+      <a href="engineering-technical-support/" class="service-card">
         <div class="service-card-img">[ Engineering Coordination Preview ]</div>
         <div class="service-card-body">
           <h3>Engineering &amp; Technical Support</h3>
@@ -209,7 +210,7 @@
         </div>
       </a>
 
-      <a href="level-of-detail-options/" class="service-card" style="text-decoration:none;">
+      <a href="level-of-detail-options/" class="service-card">
         <div class="service-card-img">[ Level of Detail Comparison ]</div>
         <div class="service-card-body">
           <h3>Level of Detail Options</h3>
@@ -220,14 +221,14 @@
 
     </div>
 
-    <div style="margin-top: 40px; display: flex; gap: 20px; flex-wrap: wrap; align-items: flex-start;">
+    <div class="cta-group mt-40">
       <div>
         <a href="../request-quote/" class="btn btn--primary">Request a Quote</a>
-        <p style="margin-top: 8px; font-size: 0.8125rem; color: var(--gray-500);">Attach drawings, specs, and scope. We will quote the right items the first time.</p>
+        <p class="cta-note">Attach drawings, specs, and scope. We will quote the right items the first time.</p>
       </div>
       <div>
         <a href="../sample-drawings/" class="btn btn--secondary">View Sample Drawings</a>
-        <p style="margin-top: 8px; font-size: 0.8125rem; color: var(--gray-500);">Fast way to validate quality before the first job.</p>
+        <p class="cta-note">Fast way to validate quality before the first job.</p>
       </div>
     </div>
   </div>
@@ -243,11 +244,11 @@
       <p>Not every project needs the same output on day one. MP uses three levels of detail to match project phase while protecting quality. This removes first-job price shock and makes it easier to start with the right deliverable, then escalate detail as the project hardens.</p>
     </div>
 
-    <div style="overflow-x: auto;">
+    <div class="overflow-x-auto">
       <table class="comparison-table">
         <thead>
           <tr>
-            <th style="min-width:200px;">Feature</th>
+            <th>Feature</th>
             <th>Quick Draw</th>
             <th>Typical Detail</th>
             <th>Advanced Detailing</th>
@@ -265,9 +266,9 @@
       </table>
     </div>
 
-    <div style="margin-top: 32px;">
+    <div class="mt-32">
       <a href="level-of-detail-options/" class="btn btn--primary">Level of Detail Options</a>
-      <p style="margin-top: 8px; font-size: 0.8125rem; color: var(--gray-500);">Use this to align scope internally before you submit.</p>
+      <p class="cta-note">Use this to align scope internally before you submit.</p>
     </div>
   </div>
 </section>
@@ -281,22 +282,22 @@
       <div>
         <h2>Engineering validates. MP coordinates and integrates.</h2>
         <p class="mt-sm">If delegated design, anchor review, or stamped calculations are required, engineering is the structural validation layer. MP's role is still planning and coordination: turning the architectural set and project conditions into a coherent drawing package that the field, fabricator, and reviewers can use. This separation is deliberate and respectful of existing engineering relationships.</p>
-        <ul style="margin-top: 20px; display: flex; flex-direction: column; gap: 10px; font-size: 0.9375rem; color: var(--gray-700);">
-          <li style="display: flex; gap: 10px; align-items: flex-start;"><span style="color: var(--gray-400); flex-shrink: 0;">→</span> Clear scope separation to prevent misalignment and rework later</li>
-          <li style="display: flex; gap: 10px; align-items: flex-start;"><span style="color: var(--gray-400); flex-shrink: 0;">→</span> Simplified coordination path when engineering is part of the deliverable</li>
+        <ul class="arrow-list mt-md">
+          <li><span class="arrow-list__icon">→</span> Clear scope separation to prevent misalignment and rework later</li>
+          <li><span class="arrow-list__icon">→</span> Simplified coordination path when engineering is part of the deliverable</li>
         </ul>
-        <div style="margin-top: 28px;">
+        <div class="mt-md">
           <a href="engineering-technical-support/" class="btn btn--secondary">Engineering and Technical Support</a>
-          <p style="margin-top: 8px; font-size: 0.8125rem; color: var(--gray-500);">Use when the project requires structural validation.</p>
+          <p class="cta-note">Use when the project requires structural validation.</p>
         </div>
       </div>
       <div>
         <div class="placeholder placeholder--lg">[ Engineering coordination diagram: Drafting ↔ Engineering ↔ Architect ]</div>
-        <div style="margin-top: 16px; padding: 20px 24px; background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: 6px;">
-          <div style="font-size: 0.875rem; font-weight: 600; color: var(--gray-800); margin-bottom: 8px;">Drafting vs. Engineering</div>
-          <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.875rem; color: var(--gray-600);">
-            <div style="display: flex; gap: 10px;"><span style="font-weight: 600; color: var(--gray-700); min-width: 80px;">Drafting</span><span>Coordination, layout, surrounding conditions, submittals</span></div>
-            <div style="display: flex; gap: 10px;"><span style="font-weight: 600; color: var(--gray-700); min-width: 80px;">Engineering</span><span>Structural validation, load calculations, PE stamp</span></div>
+        <div class="compare-box mt-sm">
+          <div class="compare-box__heading">Drafting vs. Engineering</div>
+          <div class="compare-box__rows">
+            <div class="compare-box__row"><span class="compare-box__label">Drafting</span><span>Coordination, layout, surrounding conditions, submittals</span></div>
+            <div class="compare-box__row"><span class="compare-box__label">Engineering</span><span>Structural validation, load calculations, PE stamp</span></div>
           </div>
         </div>
       </div>
@@ -313,31 +314,31 @@
       <div>
         <h2>Structured kickoff to reduce delays later</h2>
         <p class="mt-sm">The site strategy is built around one reality: "I need this done right and I don't have time to manage it." MP's process is designed to surface missing inputs early, keep communication clear, and deliver a reviewable set without chaos.</p>
-        <div style="margin-top: 28px;">
+        <div class="mt-md">
           <a href="../our-process/" class="btn btn--secondary">Our Process</a>
-          <p style="margin-top: 8px; font-size: 0.8125rem; color: var(--gray-500);">See what we need in the first week and what you can expect.</p>
+          <p class="cta-note">See what we need in the first week and what you can expect.</p>
         </div>
       </div>
-      <div style="display: flex; flex-direction: column; gap: 12px;">
-        <div style="display: flex; gap: 14px; align-items: flex-start; padding: 20px; background: white; border: 1px solid var(--gray-200); border-radius: 6px;">
-          <span style="background: var(--gray-800); color: white; font-size: 0.75rem; font-weight: 700; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px;">1</span>
+      <div class="step-list">
+        <div class="step-card">
+          <span class="step-badge">1</span>
           <div>
-            <div style="font-weight: 600; color: var(--gray-800); font-size: 0.9375rem; margin-bottom: 4px;">Intake</div>
-            <div style="font-size: 0.875rem; color: var(--gray-500);">Provide architectural drawings and scope information so MP quotes the right items.</div>
+            <div class="step-card__title">Intake</div>
+            <div class="step-card__desc">Provide architectural drawings and scope information so MP quotes the right items.</div>
           </div>
         </div>
-        <div style="display: flex; gap: 14px; align-items: flex-start; padding: 20px; background: white; border: 1px solid var(--gray-200); border-radius: 6px;">
-          <span style="background: var(--gray-800); color: white; font-size: 0.75rem; font-weight: 700; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px;">2</span>
+        <div class="step-card">
+          <span class="step-badge">2</span>
           <div>
-            <div style="font-weight: 600; color: var(--gray-800); font-size: 0.9375rem; margin-bottom: 4px;">Preview</div>
-            <div style="font-size: 0.875rem; color: var(--gray-500);">Early review to identify missing info or issues that would hold production up.</div>
+            <div class="step-card__title">Preview</div>
+            <div class="step-card__desc">Early review to identify missing info or issues that would hold production up.</div>
           </div>
         </div>
-        <div style="display: flex; gap: 14px; align-items: flex-start; padding: 20px; background: white; border: 1px solid var(--gray-200); border-radius: 6px;">
-          <span style="background: var(--gray-800); color: white; font-size: 0.75rem; font-weight: 700; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px;">3</span>
+        <div class="step-card">
+          <span class="step-badge">3</span>
           <div>
-            <div style="font-weight: 600; color: var(--gray-800); font-size: 0.9375rem; margin-bottom: 4px;">Production</div>
-            <div style="font-size: 0.875rem; color: var(--gray-500);">Drafting with questions handled as needed, then client review and revision cycle for submittal readiness.</div>
+            <div class="step-card__title">Production</div>
+            <div class="step-card__desc">Drafting with questions handled as needed, then client review and revision cycle for submittal readiness.</div>
           </div>
         </div>
       </div>
@@ -354,18 +355,18 @@
       <div>
         <h2>Proof first. Sample drawings build trust.</h2>
         <p class="mt-sm">The fastest way to evaluate a new drafting partner is to review real sets. MP intentionally uses the Sample Drawings page as the quality checkpoint, because "show, not tell" removes hesitation faster than claims.</p>
-        <ul style="margin-top: 20px; display: flex; flex-direction: column; gap: 10px; font-size: 0.9375rem; color: var(--gray-700);">
-          <li style="display: flex; gap: 10px; align-items: flex-start;"><span style="color: var(--gray-400); flex-shrink: 0;">→</span> Typical Detail examples that show surrounding conditions, fastener intent, and layout clarity</li>
-          <li style="display: flex; gap: 10px; align-items: flex-start;"><span style="color: var(--gray-400); flex-shrink: 0;">→</span> Architect-ready organization and presentation standards</li>
+        <ul class="arrow-list mt-md">
+          <li><span class="arrow-list__icon">→</span> Typical Detail examples that show surrounding conditions, fastener intent, and layout clarity</li>
+          <li><span class="arrow-list__icon">→</span> Architect-ready organization and presentation standards</li>
         </ul>
-        <div style="margin-top: 28px; display: flex; gap: 20px; flex-wrap: wrap; align-items: flex-start;">
+        <div class="cta-group mt-md">
           <div>
             <a href="../sample-drawings/" class="btn btn--primary">View Sample Drawings</a>
-            <p style="margin-top: 8px; font-size: 0.8125rem; color: var(--gray-500);">Review one set and decide quickly.</p>
+            <p class="cta-note">Review one set and decide quickly.</p>
           </div>
           <div>
             <a href="../request-quote/" class="btn btn--secondary">Request a Quote</a>
-            <p style="margin-top: 8px; font-size: 0.8125rem; color: var(--gray-500);">Tell us if the driver is approval date, lead-time, or field coordination.</p>
+            <p class="cta-note">Tell us if the driver is approval date, lead-time, or field coordination.</p>
           </div>
         </div>
       </div>
@@ -381,12 +382,14 @@
 <!-- SECTION 9: FAQs -->
 <section class="section section--gray">
   <div class="container">
-    <div style="display: grid; grid-template-columns: 1fr 320px; gap: 64px; align-items: start;">
+    <div class="content-with-sidebar">
 
       <div>
-        <div class="label" style="margin-bottom: 8px;">FAQs</div>
-        <h2 style="margin-bottom: 8px;">FAQs for the first job</h2>
-        <p style="font-size: 0.9375rem; color: var(--gray-600); margin-bottom: 32px;">These address the most common first-job concerns: timing, revisions, coordination, and engineering positioning.</p>
+        <div class="faq-intro">
+          <div class="label">FAQs</div>
+          <h2>FAQs for the first job</h2>
+          <p class="faq-intro__desc">These address the most common first-job concerns: timing, revisions, coordination, and engineering positioning.</p>
+        </div>
 
         <div class="faq-list">
 
@@ -462,22 +465,22 @@
 
         </div>
 
-        <p style="margin-top: 28px; font-size: 0.875rem; color: var(--gray-500);"><a href="../faq/" style="color: var(--gray-700); text-decoration: underline; text-underline-offset: 3px;">View Complete FAQ →</a> &nbsp; More questions answered clearly.</p>
+        <p class="faq-footer"><a href="../faq/" class="faq-footer__link">View Complete FAQ →</a> &nbsp; More questions answered clearly.</p>
       </div>
 
       <!-- FAQ Sidebar -->
-      <div style="position: sticky; top: 88px; display: flex; flex-direction: column; gap: 16px;">
-        <div style="padding: 24px; border: 1px solid var(--gray-200); border-radius: 6px; background: white;">
-          <div class="label" style="margin-bottom: 12px;">Ready to Quote?</div>
-          <p style="font-size: 0.9375rem; color: var(--gray-600); margin-bottom: 20px; max-width: none;">Attach drawings and scope. We will confirm the right level of detail up front.</p>
-          <a href="../request-quote/" class="btn btn--primary" style="display: block; text-align: center;">Request a Quote</a>
+      <aside class="sidebar">
+        <div class="sidebar__card">
+          <div class="label">Ready to Quote?</div>
+          <p>Attach drawings and scope. We will confirm the right level of detail up front.</p>
+          <a href="../request-quote/" class="btn btn--primary">Request a Quote</a>
         </div>
-        <div style="padding: 24px; border: 1px solid var(--gray-200); border-radius: 6px; background: white;">
-          <div class="label" style="margin-bottom: 12px;">See the Work First</div>
-          <p style="font-size: 0.9375rem; color: var(--gray-600); margin-bottom: 20px; max-width: none;">Browse sample drawings to validate output quality before the first job.</p>
-          <a href="../sample-drawings/" class="btn btn--secondary" style="display: block; text-align: center;">View Sample Drawings</a>
+        <div class="sidebar__card">
+          <div class="label">See the Work First</div>
+          <p>Browse sample drawings to validate output quality before the first job.</p>
+          <a href="../sample-drawings/" class="btn btn--secondary">View Sample Drawings</a>
         </div>
-      </div>
+      </aside>
 
     </div>
   </div>
@@ -492,7 +495,7 @@
       <a href="../request-quote/" class="btn btn--white">Request a Quote</a>
       <a href="../sample-drawings/" class="btn btn--ghost">View Sample Drawings</a>
     </div>
-    <p style="margin-top: 12px; font-size: 0.8125rem; opacity: 0.8;">Include target submittal date and whether engineering is required.</p>
+    <p class="page-note">Include target submittal date and whether engineering is required.</p>
   </div>
 </section>
 

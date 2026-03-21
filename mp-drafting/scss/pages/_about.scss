@@ -1,0 +1,262 @@
+// ── About page — Bio drawer (slide-out panel) ──
+.bio-drawer-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 500;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+
+  &.open {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+.bio-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 800px;
+  max-width: 92vw;
+  background: var(--white);
+  z-index: 501;
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  box-shadow: -4px 0 32px rgba(0, 0, 0, 0.12);
+
+  &.open { transform: translateX(0); }
+}
+
+.bio-drawer-header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 16px 20px;
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-200);
+  z-index: 1;
+}
+
+.bio-drawer-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--gray-500);
+  font-size: 1.25rem;
+  line-height: 1;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background 0.15s, color 0.15s;
+
+  &:hover {
+    background: var(--gray-100);
+    color: var(--gray-800);
+  }
+}
+
+.bio-drawer-photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: var(--gray-200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray-400);
+  font-size: 0.875rem;
+  flex-shrink: 0;
+}
+
+.bio-drawer-body {
+  padding: 28px 28px 20px;
+  flex: 1;
+}
+
+.bio-drawer-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 16px;
+}
+
+.bio-drawer-desc {
+  font-size: 0.9375rem;
+  color: var(--gray-600);
+  line-height: 1.7;
+  max-width: none;
+}
+
+.bio-drawer-footer {
+  display: flex;
+  gap: 10px;
+  padding: 20px 28px;
+  border-top: 1px solid var(--gray-200);
+  position: sticky;
+  bottom: 0;
+  background: var(--white);
+
+  button {
+    flex: 1;
+    padding: 10px 16px;
+    border: 1px solid var(--gray-200);
+    border-radius: 4px;
+    background: var(--white);
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--gray-700);
+    transition: background 0.15s, border-color 0.15s;
+
+    &:hover {
+      background: var(--gray-50);
+      border-color: var(--gray-400);
+    }
+
+    &:disabled {
+      opacity: 0.35;
+      cursor: default;
+    }
+  }
+}
+
+// ── Bio cards — clickable team cards ──
+.bio-card {
+  border: 1px solid var(--gray-200);
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow 0.15s, border-color 0.15s;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    border-color: var(--gray-400);
+  }
+
+  &-photo {
+    height: 180px;
+    background: var(--gray-200);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gray-400);
+    font-size: 0.875rem;
+  }
+
+  &-info {
+    padding: 16px 18px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  &-name {
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: var(--gray-800);
+  }
+
+  &-arrow {
+    color: var(--gray-400);
+    font-size: 0.875rem;
+    flex-shrink: 0;
+    transition: color 0.15s;
+  }
+
+  &:hover &-arrow { color: var(--gray-700); }
+
+  &--placeholder {
+    opacity: 0.5;
+    cursor: default;
+
+    &:hover {
+      box-shadow: none;
+      border-color: var(--gray-200);
+    }
+  }
+}
+
+// ── Process steps card (vertical timeline with connector lines) ──
+.process-steps-card {
+  padding: 28px 32px;
+  border: 1px solid var(--gray-200);
+  border-radius: 6px;
+  background: var(--gray-50);
+
+  .label { margin-bottom: 20px; }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    padding-bottom: 20px;
+
+    &:last-child {
+      padding-bottom: 0;
+
+      .process-steps-card__connector { display: none; }
+    }
+  }
+
+  &__badge-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  &__badge {
+    background: var(--gray-800);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__connector {
+    width: 1px;
+    background: var(--gray-300);
+    flex: 1;
+    margin-top: 6px;
+    min-height: 24px;
+  }
+
+  &__content {
+    padding-bottom: 4px;
+  }
+
+  &__title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--gray-800);
+    margin-bottom: 3px;
+  }
+
+  &__desc {
+    font-size: 0.8125rem;
+    color: var(--gray-500);
+  }
+}

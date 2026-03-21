@@ -1,0 +1,98 @@
+// ── Insights — page-specific styles ──
+// (Migrated from css/insights.css)
+
+// ── Topic navigation link ──
+.topic-nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border: 1px solid var(--gray-200);
+  border-radius: 6px;
+  background: var(--white);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: var(--gray-800);
+  text-decoration: none;
+  transition: border-color 0.15s;
+
+  &:hover { border-color: var(--gray-400); }
+
+  &__arrow { color: var(--gray-400); }
+}
+
+// ── Article section group ──
+.article-section {
+  margin-bottom: 48px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-size: 1.0625rem;
+    flex: 1;
+  }
+
+  &__viewall {
+    font-size: 0.8125rem;
+    color: var(--gray-500);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    margin-left: auto;
+    white-space: nowrap;
+  }
+}
+
+// ── Search / filter bar ──
+.search-bar {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin-bottom: 40px;
+  padding: 20px 24px;
+  background: var(--gray-50);
+  border: 1px solid var(--gray-200);
+  border-radius: 6px;
+
+  &__field {
+    flex: 1;
+    min-width: 220px;
+
+    &--narrow {
+      min-width: 160px;
+      flex: 0 0 auto;
+    }
+  }
+
+  &__label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--gray-500);
+    margin-bottom: 6px;
+  }
+
+  &__input,
+  &__select {
+    width: 100%;
+    padding: 9px 12px;
+    border: 1px solid var(--gray-300);
+    border-radius: 5px;
+    font-size: 0.9375rem;
+    color: var(--gray-800);
+    background: var(--white);
+    outline: none;
+  }
+
+  &__select { cursor: pointer; }
+}
+
+// ── Grid gap utilities (used by insights grid) ──
+.grid--gap-sm { gap: 12px; }
+.grid--gap-md { gap: 16px; }

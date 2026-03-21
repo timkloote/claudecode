@@ -1,0 +1,95 @@
+// ── Arrow list: flex-column ul with → icon bullets ──
+.arrow-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+
+  li {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    font-size: 0.9375rem;
+    color: var(--gray-700);
+  }
+
+  &--muted li { color: var(--gray-600); }
+  &--light  li { color: var(--gray-300); }
+  &--white  li { color: rgba(255, 255, 255, 0.85); }
+  &--sm     li { font-size: 0.875rem; }
+  &--gap-sm    { gap: 8px; }
+
+  &__icon {
+    color: var(--gray-400);
+    flex-shrink: 0;
+    margin-top: 2px;
+
+    &--dark {
+      color: var(--gray-800);
+      font-weight: 600;
+    }
+  }
+}
+
+// ── Bullet dot: small decorative circle ──
+.bullet-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--gray-400);
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 8px;
+}
+
+// ── About/team bullets on dark hero section ──
+.dark-bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 20px;
+  list-style: none;
+  font-size: 0.9375rem;
+  color: var(--gray-300);
+
+  li {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  &__icon {
+    color: var(--gray-400);
+    margin-top: 2px;
+    flex-shrink: 0;
+  }
+}
+
+// ── Numbered list: inline-numbered items without card border ──
+.num-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &__item {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    font-size: 0.9375rem;
+    color: var(--gray-700);
+  }
+
+  &__badge {
+    background: var(--gray-800);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+}
